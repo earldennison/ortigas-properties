@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './assets/css/amh-header.css';
+import './assets/css/ai-media.css';
 
-function App() {
+import './assets/css/ai-google-fonts.css';
+
+import './assets/css/header.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Estates from './pages/Estates';
+import NavBarMenu from './components/NavBarMenu';
+import Footer from './components/Footer'
+
+const App = () =>{
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <Router>
+            <NavBarMenu />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/estates" component={Estates} />
+            </Switch>
+          </Router>
+      <Footer />
     </div>
   );
 }

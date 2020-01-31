@@ -245,7 +245,7 @@ body{
     z-index: 500;
     text-align: center;
     font-size: 0;
-    background: rgba(180, 180, 180, 0.85);
+    background:#A4904Ad1; 
     min-height: 135px;
     padding: 25px 0;
 }
@@ -308,7 +308,7 @@ body{
 
 	.qs-form input{
 		width: 100%;
-		background: #003e75;
+		background: #0C310C;
 		height: 42px;
 		color: #fff;
 		font-size: 14px;
@@ -483,7 +483,7 @@ body{
 
 	/*Hover*/
 	.cta-link:hover .cta-item-img{
-		background: #003e75;
+		  background: #0c310c;
 	}
 
 	.cta-link:hover .cta-item-img svg{
@@ -585,7 +585,7 @@ body{
 		width: 100%;
 		height: 100%;
 		padding: 18px;
-		background: url(images/fp-hover.jpg) no-repeat center / cover;
+		background: #0c310c;
 		opacity: 0;
 		transition: all 0.3s ease-out;
 		-webkit-transition: all 0.3s ease-out;
@@ -666,7 +666,7 @@ body{
 /*Welcome*/
 .welcome-wrap{
 	min-height: 616px;
-	background: url(images/welcome-bg.jpg) no-repeat center top / cover;
+	background: linear-gradient(to right, #0D320D,#4a7664) /*no-repeat center top / cover; */
 	/*padding: 77px 0 70px;*/
 }
 	.welcome-content-wrap {
@@ -677,7 +677,8 @@ body{
 	    height: 7px;
 	    max-width: 174px;
 	    width: 100%;
-	    background: #7b8fa4;
+
+	    background: #a4904a;
 	    display: block;
 	    margin: 46px 0 40px;
 	    z-index: 2;
@@ -686,12 +687,12 @@ body{
 
 	.welcome-text {
 	    font-size: 14px;
-	    color: #555555;
+	    color: #f0f0f0;
 	    line-height: 24px;
 	}
 
 	.welcome-text p{
-		margin-bottom: 25px;
+		argin-bottom: 25px;
 	}
 
 	.welcome-text p:last-child{
@@ -718,7 +719,7 @@ body{
 	    width: 100%;
 	    top: 50%;
 	    height: 1px;
-	    background: #a5afb9;
+	    background: #a4904a;
 	    z-index: 0;
 	}
 
@@ -736,7 +737,8 @@ body{
 	    text-align: center;
 	    text-transform: uppercase;
 	    font-size: 34px;
-	    color: #003e75;
+
+	    color: #a4904a;
 	    margin-bottom: 15px;
 	    letter-spacing: 5px;
 	}
@@ -942,7 +944,7 @@ body{
 	.footer-form div.wpcf7-mail-sent-ok{
 		width: 100%;
 		margin: 10px auto;
-	}
+	right
 
 	.footer-form div.wpcf7 .ajax-loader{
 		margin: 50px 0 0 4px;
