@@ -1,0 +1,23 @@
+#in-the-media .itm-media img,
+.page-template-template-press .itm-media img {
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*transition: opacity .3s ease;*/
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(100%);
+}
+
+#in-the-media .itm-media:hover  img,
+.page-template-template-press .itm-media:hover  img{
+    filter: grayscale(0);
+}
+#in-the-media .itm-media img.itm-media-hover, #in-the-media .itm-media:hover img,
+.page-template-template-press .itm-media img.itm-media-hover, .page-template-template-press .itm-media:hover img{
+	     opacity: 1 !important; 
+}
+

@@ -1,0 +1,50 @@
+.custom-select {
+	height:34px;
+	width:100%;
+	max-width:200px;
+	opacity:0;
+	margin-bottom:-34px;
+	border:0;
+	position:relative;
+	z-index:2;
+	display:block;
+	filter:alpha(opacity=0);
+	cursor:pointer;
+	color:#89a8a8;
+	font-size:14px;
+}
+
+.custom-select-display {
+	width:100%;
+	height:34px;
+	max-width:200px;
+	padding:9px 10px;
+	background:#fcfcfc;
+	position:relative;
+	z-index:1;
+	line-height:normal;
+	color:#89a8a8;
+	font-family:"Arial",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	box-sizing:border-box;
+	border:1px solid #9dbcbd;
+	font-size:14px;
+}
+
+.custom-select-display-value {
+	width:70%;
+	float:left;
+	text-align:left;
+}
+
+.custom-select-display-arrow {
+	width:30%;
+	height:20px;
+	float:right;
+	text-align:right;
+}
+
+.custom-select-display-arrow:before {
+	content:'\25BC';
+}

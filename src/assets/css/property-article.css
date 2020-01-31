@@ -1,0 +1,2133 @@
+/*
+@media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+
+.content-property{
+    width:100%;
+    line-height:1.7;
+    display:block;
+}
+
+.property-listing-details-content{
+    padding-top:76px;
+    overflow:hidden;
+}
+
+.property-article-animate-text{
+
+}
+
+.property-title{
+    font-size: 80px;
+    color: #832920;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 34px;
+}
+.accent-line .accent-gold{
+    background: rgba(162, 155, 32, 0.29);
+    width: 1000px;
+    height: 1px;
+    right: 100%;
+    top: 42px;
+    margin-right: 62px;
+}
+.accent-line-dot  {
+    left: initial;
+    right: -9px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: -9px;
+}
+
+.property-address{
+    font-size: 32px;
+    color: #832920;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+    line-height: 1.23;
+    margin-bottom: 48px;
+}
+
+.property-ld-text {
+    position:relative;
+}
+.property-address > div{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0;
+}
+.property-addres-holder-left{
+    width: 65%;
+    font-size: 32px;
+}
+.property-single-address-holder{
+    color: black;
+}
+.property-paragraph{
+    padding-right: 60px;
+}
+.animate-property-specs{
+}
+.property-specs{
+    max-width: 500px;
+    background: #0f2b10;
+    position: relative;
+    text-align: center;
+    padding-bottom: 52px;
+}
+.property-specs:after{
+
+ 
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images-theme/body-bg.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: .12;
+
+
+
+}
+.property-specs-right-bg{
+    position: absolute;
+    top: -90px;
+    left: calc(100% - 125px);
+    width: 200%;
+    height: calc(100% + 90px);
+    background: #fff;
+    z-index: -1;
+}
+.property-specs-right-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/bg-parallax-b.jpg) fixed top center/cover no-repeat; 
+    opacity: .2;
+}
+.property-ld-specs-inner {
+    position: relative;
+    z-index: 5;
+    padding-top: 40px;
+}
+.property-ld-title {
+    font-size: 48px;
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1px;
+}
+
+property-ld-estate {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.3;
+    mar
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto
+    }
+in-bottom: 26px;
+}
+
+.property-ld-specs-info {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+span.property-ld-specs-border.top {
+    margin-bottom: 34px;
+    isplay: block !important;
+}
+
+span.property-ld-specs-border.bottom {
+    margin-top: 34px;
+    margin-bottom: 33px;
+}
+.property-ld-specs-info span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+span.property-ld-specs-border {
+    display: block !important;
+}
+property-oh-specs {
+    content: '';
+    position: relative;
+    bottom: 0;
+    left: -30px;
+    width: calc(100% + 30px);
+    background: #debf89;
+    z-index: 1;
+}
+.property-oh-specs-wrapper {
+    position: absolute;
+    max-width: 500px;
+    left: 30px;
+    width: 100%;
+}
+property-ld-text .accent-line.accent-gold {
+    width: 1000px;
+    height: 1px;
+    right: 100%;
+    top: 42px;
+    margin-right: 62px;
+}
+@media only screen and (max-width: 991px)
+.ip-ld-text .accent-line.accent-gold {
+    display: none;
+}
+*/
+/* <FromScratch>
+.property-oh-specs {
+    content: '';
+    position: relative;
+    bottom: 0;
+    left: -30px;
+    width: calc(100% + 30px);
+    background: #debf89;
+    z-index: 1;
+}
+.property-oh-specs-wrapper {
+    position: absolute;
+    max-width: 500px;
+    left: 30px;
+    width: 100%;
+}
+.property-oh-specs-wrapper span {
+    font-size: 35px;
+    font-size: 30px;
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.3;
+    padding: 31px 0;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.page-template-template-property-details-main .ip-banner-wrap{
+    display: none;
+}
+    
+    .ip-listings-main-slider-holder {
+        position: relative;
+    }
+
+    .ip-listing-photo-item canvas{
+        display: block;
+        width: 100%;
+        background: #000;
+        opacity: .2;
+        height: 100vh;
+    }
+
+        .ip-listing-photo-item{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+            .page-template-template-property-details-main .breadcrumb-container {
+                bottom: 24px;
+            }
+
+                .ip-listing-details-arrow {
+                    position: absolute;
+                    bottom: 3px;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    width: 215px;
+                    text-align: center;
+                    padding: 27.5px 0;
+                }
+
+                    .ip-listing-details-arrow span{
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: 2.8px;
+                        cursor: pointer;
+                        display: inline-block !important;
+                    }
+
+                        .ip-listing-details-arrow span em {
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            vertical-align: unset;
+                            border: solid 1px rgba(222, 191, 137, 0.29);
+                            border-radius: 100%;
+                            color: #debf89;
+                            font-size: 11px;
+                            padding-top: 6px;
+                        }
+
+                            span.ip-ld-prev em::before {
+                                right: -1px;
+                                position: relative;
+                            }
+
+                                span.ip-ld-next em::before {
+                                    left: 2px;
+                                    position: relative;
+                                }
+
+                            .ip-listing-details-arrow span:hover{
+                                color: #debf89;
+                            }
+
+                        .ip-listing-details-arrow span:hover em{
+                            background: #debf89;
+                            color: #000;
+                            border: solid 1px #debf89;
+                        }
+
+                    .ip-listing-details-arrow .fp-divider {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 1px;
+                        height: 22px;
+                        background: #a3844f;
+                        opacity: .54;
+                        margin-left: 4px;
+                        margin-right: 8px;
+                    }
+
+                .ip-listing-photo-slick-slider .slick-slide div {
+                    height: 100% !important;
+                }
+
+            .property-ld-title {
+                font-size: 80px;
+                color: #832920;
+                text-transform: uppercase;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 1.5px;
+                line-height: 1;
+                margin-bottom: 34px;
+            }
+
+                .property-ld-address {
+                    font-size: 36px;
+                    font-size: 32px;
+                    color: #832920;
+                    font-family: 'Cormorant Garamond', serif;
+                    letter-spacing: 2px;
+                    line-height: 1.23;
+                    margin-bottom: 48px;
+                }
+
+                .property-ld-address .address-holder{
+                    color: #000;
+                }
+
+                    .property-ld-p{
+                        padding-right: 60px;
+                    }
+
+                        .property-ld-p p{
+                            font-size: 19px !important;
+                            color: #303030 !important;
+                            font-family: 'PT Sans Narrow', sans-serif;
+                        }
+
+                    .property-ld-text .accent-line.accent-red {
+                        width: 1000px;
+                        height: 1px;
+                        right: 100%;
+                        top: 42px;
+                        margin-right: 62px;
+                    }
+
+                .property-ld-text .accent-line-dot {
+                    left: initial;
+                    right: -9px;
+                }
+
+            .property-ld-text {
+                position: relative;
+            }
+
+.property-ld-specs-content{
+    width: calc((100vw - 1140px) / 2 + 100%);
+    margin-top: 14px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+    .property-ld-specs-content::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -30px;
+        width: calc(100% + 30px);
+        background: #debf89;
+        z-index: 1;
+    }
+
+    .property-ld-specs {
+        max-width: 500px;
+        background: #0f2b10;
+        position: relative;
+        text-align: center;
+        padding-bottom: 52px;
+    }
+
+        .property-ld-title {
+            font-size: 48px;
+            color: #fff;
+            font-family: 'PT Sans Narrow', sans-serif;
+            letter-spacing: 1px;
+        }
+
+            .property-ld-estate{
+                font-size: 24px;
+                color: #fff;
+                font-family: 'PT Sans Narrow', sans-serif;
+                text-transform: uppercase;
+                line-height: 1.3;
+                margin-bottom: 26px;
+            }
+
+                .ip-ld-estate span{
+                    color: #debf89;
+                }
+
+                    .property-ld-specs-info {
+                        font-size: 22px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                    }
+
+                        .ip-ld-specs-info em{
+                            font-style: normal !important;
+                            font-size: 15px;
+                        }
+
+                    span.property-ld-specs-border img {
+                        margin: 0 auto !important;
+                    }
+
+                span.ip-ld-specs-border {
+                    display: block !important;
+                }
+
+            span.property-ld-specs-divider {
+                width: 1px;
+                height: 103px;
+                background: #545454;
+            }
+
+        .property-ld-specs-info span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1
+        }
+
+        span.property-ld-specs-border.top {
+            margin-bottom: 34px;
+        }
+
+            span.property-ld-specs-border.bottom {
+                margin-top: 34px;
+                margin-bottom: 33px;
+            }
+
+                .property-ld-specs-info span img {
+                    margin: 6px auto 0;
+                }
+
+                    span.spec-list {
+                        width: 155px;
+                    }
+
+                .property-ld-specs::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url("../images-theme/body-bg.png") no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    opacity: .12;
+                }
+
+            .property-ld-nspecs-inner{
+                position: relative;
+                z-index: 5;
+                padding-top: 40px;
+            }
+
+        .property-listing-details-content {
+            padding-top: 76px;
+        }
+
+            a.wv-link {
+                font-size: 19px;
+                font-weight: 700;
+                color: #4f4f4f;
+                font-family: 'PT Sans Narrow', sans-serif;
+                float: right;
+            }
+
+            a.wv-link:hover{
+                    color: #832920;
+            }
+
+                a.wv-link span{
+                    border-bottom: solid 1px #4f4f4f;
+                }
+
+                a.wv-link:hover span{
+                    border-color: #832920;
+                }
+
+                a.wv-link img {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                    .property-specs-right-bg {
+                        position: absolute;
+                        top: -90px;
+                        left: calc(100% - 125px);
+                        width: 200%;
+                        height: calc(100% + 90px);
+                        background: #fff;
+                        z-index: -1;
+                    }
+
+                        .property-specs-right-bg::after{
+                            content: '';
+                            position: absolute;
+                            top: 0 ;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: url("../images-theme/body-bg.png") fixed top center/cover no-repeat;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                            opacity: .2;
+                        }
+@media only screen and (max-width: 991px) {
+    .hero-listings-title{
+        position: static;
+        width: 100%;
+    }
+    #floating-side-btn{
+        width: 90px;
+        top: 20%;
+        left: -27px;
+    }
+        #floating-side-btn a{
+            font-size: 0 !important;
+            padding: 10px; 
+        }
+            #floating-side-btn a::before{
+                content: "\e904";
+                display: block;
+                font-family: agentimage!important;
+                speak: none;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                background: none !important;
+                font-size: 34px !important;
+                color: #FFF !important;
+                text-decoration: none !important;
+                opacity: 0.8 !important;
+                height: 0;
+            }
+    #single-listing{
+        padding-top: 15px;
+    }
+        #listing-about{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+            .listing-about-description{
+                width: 100% !important;
+            }
+            .listing-about-image{
+                display: none;
+            }
+        .listing-gallery-item{
+            width: 50%;
+        }
+        .listing-agent-item{
+            margin: 0 !important;
+            padding: 20px 0;
+        }
+            .listing-agent-item canvas{
+                margin: 0 auto;
+            }
+        .ip-contact-form{
+            margin-top: 30px !important;
+        }
+        .listing-agent-item a.hide{
+            display: block !important;
+        }
+        .listing-agent-item a.listing-agent-item-smi{
+            display: inline-block !important;
+            vertical-align: middle;
+        }
+        .listing-info-text .default-heading {
+            text-align: center !important;
+        }
+        .listing-cta-btn{
+            font-size: 0;
+        }
+            .listing-cta-btn a{
+                display: inline-block !important;
+                min-width: initial;
+                margin-left: 5px;
+                margin-right: 5px;
+                width: calc(100% / 3 - 10px);
+                font-size: 13px;
+                letter-spacing: 0.1em;
+            }
+
+            .thumbnails_sildeshow button.aiosp-close {
+                top: -60px;
+                right: 0;
+            }
+
+            .ip-oh-specs{
+                left: 0;
+                width: 100%;
+            }
+            .ip-oh-specs-wrapper{
+                left: 0;
+                width: 100%;
+                max-width: 100%;
+            }
+            .ip-oh-specs-wrapper span{
+                max-width: 100%;
+            }
+
+            .ip-listing-details-agent-area > a,
+            .ip-listing-details-agent-area .ip-ld-agent-info{
+                display: block;
+                width: 100%;
+                max-width: 450px;
+                margin: 20px auto;
+                padding: 0;
+            }
+            .property-ld-address .property-address-holder-left,
+            .property-ld-address .property-address-holder-right{
+                width: 100%;
+                display: block;
+            }
+            .address-holder-right img {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+}
+]*/
+/*properties details page start*/
+
+.page-template-template-property-details-main .ip-banner-wrap{
+    display: none;
+}
+    
+    .ip-listings-main-slider-holder {
+        position: relative;
+    }
+
+    .ip-listing-photo-item canvas{
+        display: block;
+        width: 100%;
+        background: #000;
+        opacity: .2;
+        height: 100vh;
+    }
+
+        .ip-listing-photo-item{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+            .page-template-template-property-details-main .breadcrumb-container {
+                bottom: 24px;
+            }
+
+                .ip-listing-details-arrow {
+                    position: absolute;
+                    bottom: 3px;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    width: 215px;
+                    text-align: center;
+                    padding: 27.5px 0;
+                }
+
+                    .ip-listing-details-arrow span{
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: 2.8px;
+                        cursor: pointer;
+                        display: inline-block !important;
+                    }
+
+                        .ip-listing-details-arrow span em {
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            vertical-align: unset;
+                            border: solid 1px rgba(222, 191, 137, 0.29);
+                            border-radius: 100%;
+                            color: #debf89;
+                            font-size: 11px;
+                            padding-top: 6px;
+                        }
+
+                            span.ip-ld-prev em::before {
+                                right: -1px;
+                                position: relative;
+                            }
+
+                                span.ip-ld-next em::before {
+                                    left: 2px;
+                                    position: relative;
+                                }
+
+                            .ip-listing-details-arrow span:hover{
+                                color: #debf89;
+                            }
+
+                        .ip-listing-details-arrow span:hover em{
+                            background: #debf89;
+                            color: #000;
+                            border: solid 1px #debf89;
+                        }
+
+                    .ip-listing-details-arrow .fp-divider {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 1px;
+                        height: 22px;
+                        background: #a3844f;
+                        opacity: .54;
+                        margin-left: 4px;
+                        margin-right: 8px;
+                    }
+
+                .ip-listing-photo-slick-slider .slick-slide div {
+                    height: 100% !important;
+                }
+
+            .ip-ld-title {
+                font-size: 80px;
+                color: #832920;
+                text-transform: uppercase;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 1.5px;
+                line-height: 1;
+                margin-bottom: 34px;
+            }
+
+                .ip-ld-address {
+                    /*font-size: 36px;*/
+                    font-size: 32px;
+                    color: #832920;
+                    font-family: 'Cormorant Garamond', serif;
+                    letter-spacing: 2px;
+                    line-height: 1.23;
+                    margin-bottom: 48px;
+                }
+
+                .ip-ld-address .address-holder {
+                    color: #000;
+                }
+
+                    .ip-ld-p {
+                        padding-right: 60px;
+                    }
+
+                        .ip-ld-p p {
+                            font-size: 19px !important;
+                            color: #303030 !important;
+                            font-family: 'PT Sans Narrow', sans-serif;
+                        }
+
+                    .ip-ld-text .accent-line.accent-red {
+                        width: 1000px;
+                        height: 1px;
+                        right: 100%;
+                        top: 42px;
+                        margin-right: 62px;
+                    }
+
+                .ip-ld-text .accent-line-dot {
+                    left: initial;
+                    right: -9px;
+                }
+
+            .ip-ld-text {
+                position: relative;
+            }
+
+.ip-ld-specs-content{
+    width: calc((100vw - 1140px) / 2 + 100%);
+    margin-top: 14px;
+    /*padding-bottom: 133px;*/
+    padding-bottom: 30px;
+    position: relative;
+}
+
+/*    .ip-ld-specs-content::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -30px;
+        width: calc(100% + 30px);
+        background: #debf89;
+        z-index: 1;
+    }
+*/
+    .ip-ld-specs {
+        max-width: 500px;
+        background: #000;
+        position: relative;
+        text-align: center;
+        padding-bottom: 52px;
+    }
+
+        .ip-ld-price {
+            font-size: 48px;
+            color: #fff;
+            font-family: 'PT Sans Narrow', sans-serif;
+            letter-spacing: 1px;
+        }
+
+            .ip-ld-neighborhood{
+                font-size: 24px;
+                color: #fff;
+                font-family: 'PT Sans Narrow', sans-serif;
+                text-transform: uppercase;
+                line-height: 1.3;
+                margin-bottom: 26px;
+            }
+
+                .ip-ld-neighborhood span{
+                    color: #debf89;
+                }
+
+                    .ip-ld-specs-info {
+                        font-size: 22px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                    }
+
+                        .ip-ld-specs-info em{
+                            font-style: normal !important;
+                            font-size: 15px;
+                        }
+
+                    span.ip-ld-specs-border img {
+                        margin: 0 auto !important;
+                    }
+
+                span.ip-ld-specs-border {
+                    display: block !important;
+                }
+
+            span.ip-ld-specs-divider {
+                width: 1px;
+                height: 103px;
+                background: #545454;
+            }
+
+        .ip-ld-specs-info span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1
+        }
+
+        span.ip-ld-specs-border.top {
+            margin-bottom: 34px;
+        }
+
+            span.ip-ld-specs-border.bottom {
+                margin-top: 34px;
+                margin-bottom: 33px;
+            }
+
+                .ip-ld-specs-info span img {
+                    margin: 6px auto 0;
+                }
+
+                    span.spec-list {
+                        width: 155px;
+                    }
+
+                .ip-ld-specs::after{
+                    content: '';
+                    position: absolute;
+                    top: 0 ;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background:url("../images-theme/imageImperium.png");
+                    background-position: center;
+                    background-size: cover;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    opacity: .12;
+                }
+
+            .ip-ld-specs-inner{
+                position: relative;
+                z-index: 5;
+                padding-top: 40px;
+            }
+
+        .ip-listing-details-content {
+            padding-top: 76px;
+        }
+
+            a.wv-link {
+                font-size: 19px;
+                font-weight: 700;
+                color: #4f4f4f;
+                font-family: 'PT Sans Narrow', sans-serif;
+                float: right;
+            }
+
+            a.wv-link:hover{
+                    color: #832920;
+            }
+
+                a.wv-link span{
+                    border-bottom: solid 1px #4f4f4f;
+                }
+
+                a.wv-link:hover span{
+                    border-color: #832920;
+                }
+
+                a.wv-link img {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                    .ip-specs-right-bg {
+                        position: absolute;
+                        top: -90px;
+                        left: calc(100% - 125px);
+                        width: 200%;
+                        height: calc(100% + 90px);
+                        background: #fff;
+                        z-index: -1;
+                    }
+
+                        .ip-specs-right-bg::after{
+                            content: '';
+                            position: absolute;
+                            top: 0 ;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);*/
+                            opacity: .2;
+                        }
+
+.ip-listing-details-cta {
+    /*padding: 50px 0 63px;*/
+        padding: 20px 0 40px;
+}
+
+    .ip-ld-cta-list a {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #000;
+        border: solid 2px #b4b4b4;
+        height: 75px;
+        line-height: 75px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        letter-spacing: 6px;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        background: transparent;
+        max-width: 360px;
+        margin: 30px auto;
+    }
+
+        .ip-ld-cta-list a span{
+            position: relative;
+        }
+
+            .ip-ld-cta-list a span::after,
+            .ip-ld-cta-list a span::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 11px;
+                height: 1px;
+                margin: auto;
+                background: #b4b4b4;
+            }
+
+                .ip-ld-cta-list a span::before{
+                    left: calc(100% + 6px);
+                }
+
+                    .ip-ld-cta-list a span::after{
+                        right: calc(100% + 12px);
+                    }
+
+
+                        .ip-ld-cta-list.cta2-ld a,
+                        .ip-ld-cta-list.cta3-ld a{
+                            letter-spacing: 4.5px;
+                        }
+
+                            .ip-ld-cta-list a:hover{
+                                border: solid 2px #debf89;
+                                background: #debf89;
+                            }
+ 
+ .ip-ld-video-area {
+    background: #fff;
+    padding: 0 45px 104px;
+    width: calc(100% + 30px);
+    position: relative;
+    margin-left: -15px;
+}  
+
+     .ip-ld-video-area::after{
+        content: '';
+        position: absolute;
+        bottom: 0 ;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: #debf89;
+     }   
+
+        .ip-ld-video-inner {
+            position: relative;
+            z-index: 5;
+        }   
+
+            .ip-ld-video-bg-left,
+            .ip-ld-video-bg-right{
+                position: absolute;
+                bottom: 0;
+                width: 200%;
+                height: calc(100% - 100px);
+            }   
+
+                .ip-ld-video-bg-left{
+                    right: 100%;
+                    background: #070707;
+                } 
+
+                    .ip-ld-video-bg-right{
+                        left: 100%;
+                        background: #fff;
+                    }   
+
+                        .ip-ld-video-bg-left::after{
+                            content: '';
+                            position: absolute;
+                            top: 0 ;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);*/
+                            opacity: .2;
+                        }  
+
+                    .ip-ld-video-bg-right::after{
+                        content: '';
+                        position: absolute;
+                        top: 0 ;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);*/
+                        opacity: .2;
+                    } 
+
+.ip-listing-details-photo-thumbnails {
+    /*padding-top: 94px;*/
+    padding-top: 30px;
+    }
+
+    .ip-ld-thumbnails-holder {
+        font-size: 0;
+        position: relative;
+    }
+
+        .ip-ld-thumb-list {
+            display: inline-block;
+            vertical-align: bottom;
+            padding: 2px;
+        }   
+
+            .ip-ld-thumb-list.ld-thumb1, .ip-ld-thumb-list.ld-thumb4 {
+                width: 58%;
+            } 
+
+                .ip-ld-thumb-list.ld-thumb2, .ip-ld-thumb-list.ld-thumb3 {
+                    width: 42%;
+                } 
+
+                    .ip-ld-thumb-area {
+                        margin: 0 -140px;
+                        position: relative;
+                        z-index: 5;
+                    }
+
+                        .ip-ld-thumb{
+                            -webkit-filter: grayscale(100%);
+                            filter: grayscale(100%);
+                            -webkit-transition: all 0.4s ease-in-out;
+                            -moz-transition: all 0.4s ease-in-out;
+                            -o-transition: all 0.4s ease-in-out;
+                            transition: all 0.4s ease-in-out;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+                            .ip-ld-thumb-list a{
+                                display: block;
+                            }
+
+                                .ip-ld-thumb-list a:hover .ip-ld-thumb{
+                                    -webkit-filter: grayscale(0);
+                                    filter: grayscale(0);
+                                }
+
+                            .ip-listing-details-thumb-arrow {
+                                position: relative;
+                                background: #debf89;
+                                max-width: 360px;
+                                text-align: center;
+                                padding: 27.5px 0;
+                                margin: -2px -15px 0 auto;
+                            }
+
+                                .ip-listing-details-thumb-arrow span{
+                                    font-family: 'PT Sans Narrow', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: #000;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2.8px;
+                                    cursor: pointer;
+                                    display: inline-block !important;
+                                    vertical-align: middle;
+                                }
+
+                                    .ip-listing-details-thumb-arrow span em {
+                                        width: 24px;
+                                        height: 24px;
+                                        display: inline-block;
+                                        vertical-align: unset;
+                                        border: solid 1px rgba(131, 41, 32, 0.29);
+                                        border-radius: 100%;
+                                        color: #832920;
+                                        font-size: 11px;
+                                        padding-top: 6px;
+                                    }
+
+                                        span.ip-ld-thumb-prev em::before {
+                                            right: -1px;
+                                            position: relative;
+                                        }
+
+                                            span.ip-ld-thumb-next em::before {
+                                                left: 2px;
+                                                position: relative;
+                                            }
+
+                                        .ip-listing-details-thumb-arrow span:hover{
+                                            color: #fff;
+                                        }
+
+                                    .ip-listing-details-thumb-arrow span:hover em{
+                                        background: #fff;
+                                        color: #000;
+                                        border: solid 1px #fff;
+                                    }
+
+                                .ip-listing-details-thumb-arrow .fp-thumb-divider {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 1px;
+                                    height: 22px;
+                                    background: #a3844f;
+                                    opacity: .54;
+                                    margin-left: 9px;
+                                    margin-right: 11px;
+                                }
+
+                            .ip-ld-thumb-right-bg{
+                                position: absolute;
+                                bottom: 0;
+                                left: 100%;
+                                width: 200%;
+                                height: calc(100% - 227px);
+                                background: #070707;
+                            }
+
+                        .ip-ld-thumb-right-bg::after{
+                            content: '';
+                            position: absolute;
+                            top: 0 ;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);*/
+                            opacity: .2;
+                        } 
+
+                    .ip-ld-thumb-list a canvas {
+                        display: block;
+                        width: 100%;
+                    }
+
+                .ip-ld-thumb-area::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 3px;
+                    width: 15%;
+                    height: 100%;
+                    background: #fff;
+                    z-index: -1;
+                }
+
+.ip-listing-details-map{
+    padding-top: 97px;
+}
+
+    .ip-ld-map-main{
+        position: relative;
+    }
+
+        .ip-ld-map-area {
+            margin: 0 -140px;
+            position: relative;
+            z-index: 5;
+        }
+
+            .ip-ld-map-bottom-bg {
+                height: 130px;
+                width: 40.5%;
+                background: #debf89;
+                position: relative;
+                margin-top: -10px;
+            }
+
+                .ip-ld-map-left-bg{
+                    position: absolute;
+                    bottom: 0;
+                    right: 100%;
+                    width: 200%;
+                    height: calc(100% - 110px);
+                    background: #070707;
+                }
+
+            .ip-ld-map-left-bg::after{
+                content: '';
+                position: absolute;
+                top: 0 ;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                   /* background-position: left center;
+                    background-size: auto 100%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);*/
+                opacity: .2;
+            } 
+
+        .map-label-overlay {
+            position: absolute;
+            top: 48%;
+            right: 16%;
+            z-index: 5;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 21px 27px 32px;
+        }
+
+            .ip-map-label{
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 30px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+                .ip-map-label span{
+                    font-size: 18px;
+                    display: block;
+                }
+
+                    span.map-border-accent {
+                        width: 100%;
+                        height: 1px;
+                        background: #3e3e3e;
+                    }
+
+                        span.map-border-accent {
+                            width: calc(100% + 70px);
+                            height: 1px;
+                            background: #3e3e3e;
+                            position: relative;
+                            left: -70px;
+                            margin: 2px 0 8px;
+                        }
+
+                    span.map-border-accent span{
+                        width: 18px;
+                        height: 18px;
+                        display: block;
+                        position: absolute;
+                        top: -9px;
+                        left: -9px;
+                    }
+
+                span.map-border-accent span::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 1px solid rgba(0,0,0,.29);
+                }
+
+                    span.map-border-accent span::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: #000;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                    }
+
+.ip-listing-details-agent-main {
+    position: relative;
+    margin: 0 -15px;
+    z-index: 5;
+}
+
+    .ip-listing-details-agent-area {
+        background: #fff;
+        max-width: 884px;
+        margin: 54px auto 0;
+        font-size: 0;
+    }
+
+        .ip-ld-agent-photo {
+            /*width: 55%;*/
+            width: 35%;
+            margin-top: 35px;
+            display: inline-block;
+            vertical-align: top;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+            .ip-ld-agent-photo canvas {
+                display: block;
+                width: 100%;
+            }
+
+                .ip-ld-agent-info {
+                    display: inline-block;
+                    vertical-align: top;
+                    /*width: 45%;*/
+                    width: 65%;
+                    padding-left: 70px;
+                    padding-top: 27px;
+                }
+
+                    .ip-ld-agent-name {
+                        font-size: 48px;
+                        color: #363636;
+                        text-transform: uppercase;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        letter-spacing: 1px;
+                        line-height: 1;
+                        margin-bottom: 11px;
+                    }
+
+                        .ip-ld-agent-dre {
+                            font-size: 24px;
+                            color: #363636;
+                            text-transform: uppercase;
+                            font-family: 'PT Sans Narrow', sans-serif;
+                            letter-spacing: .7px;
+                            line-height: 1;
+                            margin-bottom: 57px;
+                        }
+
+                            .ip-ld-agent-contacts span,
+                            .ip-ld-agent-contacts span a{
+                                color: #313131;
+                                /*font-size: 30.5px;*/
+                                font-size: 24px;
+                                font-family: 'PT Sans Narrow', sans-serif;
+                                line-height: 1;
+                            }
+
+                                .ip-ld-agent-contacts span{
+                                    display: block;
+                                    /*margin-bottom: 23px;*/
+                                    margin-bottom: 10px;
+                                }
+
+                            .ip-ld-agent-contacts em.ai-font-phone {
+                                font-size: 25px;
+                                color: #debf89;
+                                width: 30px;
+                                margin-right: 6px;
+                                display: inline-block;
+                            }
+
+                        .ip-ld-agent-contacts em.ai-font-envelope-f {
+                            font-size: 18px;
+                            color: #debf89;
+                            width: 30px;
+                            margin-right: 6px;
+                            display: inline-block;
+                        }
+
+                    .ip-ld-agent-link a {
+                        display: block;
+                        text-align: center;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: #000;
+                        border: solid 2px #b4b4b4;
+                        height: 53px;
+                        line-height: 53px;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        letter-spacing: 3.5px;
+                        -webkit-transition: all 0.4s ease-in-out;
+                        -moz-transition: all 0.4s ease-in-out;
+                        -o-transition: all 0.4s ease-in-out;
+                        transition: all 0.4s ease-in-out;
+                        background: transparent;
+                        max-width: 187px;
+                        margin: 30px 0;
+                    }
+
+                        .ip-ld-agent-link a span{
+                            position: relative;
+                        }
+
+                            .ip-ld-agent-link a span::after,
+                            .ip-ld-agent-link a span::before{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                width: 11px;
+                                height: 1px;
+                                margin: auto;
+                                background: #b4b4b4;
+                            }
+
+                                .ip-ld-agent-link a span::before{
+                                    left: calc(100% + 6px);
+                                }
+
+                                    .ip-ld-agent-link a span::after{
+                                        right: calc(100% + 12px);
+                                    }
+
+                                        .ip-ld-agent-link a:hover{
+                                            border: solid 2px #debf89;
+                                            background: #debf89;
+                                        }
+
+                                    .ip-ld-agent-contacts span a:hover{
+                                        color: #debf89;
+                                    }
+
+                                .ip-listing-details-agent-main .ip-title {
+                                    text-align: right;
+                                    display: block;
+                                    padding: 0 15px;
+                                }
+
+                            .ip-listing-details-agent-main .ip-title .section-title {
+                                display: inline-block;
+                                position: relative;
+                            }
+
+                        .ip-listing-details-agent-main .accent-line {
+                            top: auto;
+                            bottom: 38px;
+                        }
+
+                    .ip-listing-details-agent-main .ip-title .accent-line.accent-red {
+                        width: 2000px;
+                        height: 1px;
+                        right: 100%;
+                        margin-right: 57px;
+                    }
+
+                .ip-listing-details-agent-main .accent-line-dot {
+                    left: auto;
+                    right: -12px;
+                }
+
+            .ip-listing-details-agent {
+                padding-top: 58px;
+            }
+
+            .ip-ld-agent-bottom-bg {
+                height: 127px;
+                width: 100%;
+                background: #debf89;
+                position: relative;
+                margin-top: 90px;
+            }
+
+                .ip-ld-agent-left-bg{
+                    position: absolute;
+                    bottom: 0;
+                    right: 100%;
+                    width: 200%;
+                    height: calc(100% - 76px);
+                    background: #fff;
+                }
+
+                    .ip-ld-agent-left-bg::after{
+                        content: '';
+                        position: absolute;
+                        top: 0 ;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                       /* background-position: left center;
+                        background-size: auto 100%;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);*/
+                        opacity: .2;
+                    } 
+
+                .ip-ld-agent-right-bg{
+                    position: absolute;
+                    bottom: 0;
+                    left: 100%;
+                    width: 200%;
+                    height: calc(100% - 163px);
+                    background: #070707;
+                }
+
+                    .ip-ld-agent-right-bg::after{
+                        content: '';
+                        position: absolute;
+                        top: 0 ;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                       /* background-position: left center;
+                        background-size: auto 100%;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);*/
+                        opacity: .2;
+                    } 
+
+    .page-template-template-property-details-main .ip-about-section.ip-about-section-4 .ip-title-wrap,
+    .page-template-template-property-details-alt .ip-about-section.ip-about-section-4 .ip-title-wrap {
+        text-align: left;
+    }
+
+        .page-template-template-property-details-main .ip-about-section.ip-about-section-4,
+        .page-template-template-property-details-alt .ip-about-section.ip-about-section-4 {
+            padding-top: 104px;
+        }
+
+            .page-template-template-property-details-alt .ip-about-section.ip-about-section-4{
+                text-align: left;
+            }
+
+                .page-template-template-property-details-alt .ip-about-section-4 .section-parallax-a.section-parralax-flow-left {
+                    right: 90%;
+                    top: 263px;
+                    bottom: 0;
+                }
+
+                    .page-template-template-property-details-alt #content .ip-about-sold-listing-dots.ip-custom-pagination {
+                        margin-left: -15px;
+                        margin-right: auto;
+                        padding-right: 163px;
+                        text-align: left;
+                    }
+
+/*alt lisitng detials*/
+.ip-ld-alt-large-photo,
+.ip-ld-alt-small-photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    .ip-ld-alt-large-photo canvas,
+    .ip-ld-alt-small-photo canvas{
+        display: block;
+        width: 100%;
+    }
+
+        .ip-ld-alt-slider-inner {
+            position: relative;
+            width: calc(100% + 74px);
+            z-index: 5;
+            background: #fff;
+            left: 67px;
+        }
+
+            .ip-alt-thumb-list {
+                padding: 0 1.5px;
+            }
+
+                .ip-ld-alt-small-photo {
+                    max-width: 155px;
+                    margin: 0 auto;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+
+                .ip-ld-alt-slider-holder .ip-listing-details-arrow {
+                    position: relative;
+                    bottom: 0;
+                    background: #debf89;
+                    max-width: 345px;
+                    width: 100%;
+                    margin: 0 -15px 0 auto;
+                    padding: 51.5px 0;
+                }
+
+                    .ip-ld-alt-slider-holder .ip-listing-details-arrow span{
+                        color: #000;
+                    }
+
+                        .ip-ld-alt-slider-holder .ip-listing-details-arrow span em {
+                            border: solid 1px rgba(66, 25, 21, 0.29);
+                            color: #832920;
+                        }
+
+                .ip-ld-alt-thumb-photo .slick-slide.slick-current.slick-active .ip-ld-alt-small-photo{
+                    -webkit-filter: grayscale(0);
+                    filter: grayscale(0);
+                }
+
+                    .ip-ld-alt-thumb-photo {
+                        margin: 0 -1.5px;
+                    }
+
+                .ip-ld-alt-main-photo .slick-slide div,
+                .ip-ld-alt-thumb-photo .slick-slide div {
+                    height: 100% !important;
+                    display: block !important;
+                }
+
+            .ip-ld-alt-slider-holder {
+                position: relative;
+                padding-top: 127px;
+            }
+
+                .ip-ld-alt-slider-bg-right {
+                    position: absolute;
+                    top: -76px;
+                    left: calc(100% + 15px);
+                    width: 200%;
+                    height: calc(100% + 166px);
+                    background: #070707;
+                }
+
+                    .ip-ld-alt-slider-bg-right::after{
+                        content: '';
+                        position: absolute;
+                        top: 0 ;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                       /* background-position: left center;
+                        background-size: auto 100%;
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);*/
+                        opacity: .2;
+                    } 
+
+                .page-template-template-property-details-alt .ip-ld-p {
+                    padding-right: 0;
+                }
+                
+
+/*properties details page end*/
+
+
+/*** Communities details page ***/
+.single-neighborhood #inner-page-wrapper > .container {
+    padding: 0;
+    width: 100%;
+}
+.ip-comm-wrap {
+    position: relative;
+}
+
+    .ip-comm-section {
+        /*overflow: hidden;*/
+    }
+
+    .ip-comm-section-1 {
+        padding: 112px 0 0; 
+        position: relative;
+    }
+
+.ip-comm-section-1 .container {
+    position: relative;
+}    
+
+.ip-comm-p-bg .section-parallax-a.section-parralax-flow-left.section-parralax-white {
+    top: -112px;
+    bottom: 0;
+    right: 100%;
+    left: -1000px;
+}
+
+.ip-comm-p-bg .section-parallax-a.section-parralax-flow-right {
+    left: 90%;
+    top: 259px;
+    bottom: 0;
+    right: -1000px;
+}
+
+
+ .comm-text-details {
+    position: relative;
+    text-align: center;
+ }
+
+   .ip-comm-section-1 p.p-width{ 
+     width: 80%; 
+     margin: 1.5em auto !important;
+
+   }
+   
+   .comm-text-details .accent-line.accent-red {
+    width: 1000px;
+    height: 1px;
+/*    right: 70%;
+    top: 12%;
+    margin-right: 72px;*/
+    right: 100%;
+    top: 50%;    
+    margin-right: 30px;    
+   }
+   .ip-comm-wrap .ip-about-section-3 .accent-line.accent-red {
+        margin-right: 30px;
+   }
+
+    .comm-text-details .accent-line-dot {
+    left: initial;
+    right: -9px;
+}
+
+    .ip-comm-section-2 {
+        padding:0; 
+        position: relative;
+    }
+
+ .ip-comm-section-2 .container {
+    max-width: 1424px; 
+    width: 100%;
+ } 
+
+
+ .comm-image-cont {
+    position: relative;
+ }
+
+
+  .comm-img-wrapp {
+     position: relative; 
+     z-index: 1; 
+     padding-bottom: 120px;
+  }
+
+    .comm-img-wrapp:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 125px;
+    left: 165px;
+    left: 23%;
+    background: #debf89;
+    height: 120px;
+    }  
+
+   .comm-img-wrapp canvas {
+     width: 100%; 
+     background-size: cover;
+     display: block;
+   }
+
+
+  .comm-details-about p { 
+
+     padding-right: 80px;
+
+  }
+
+   .comm-image-cont .section-parralax-flow-right {
+    right: -1000px;
+    top: 20%;
+    bottom: 0;
+    left: calc(100% - 125px );
+   }
+    .ip-comm-details-listing-list .fp {
+        width: 33.3333333%!important;
+    }
+
+    .ip-comm-details-listing-list .fp-img canvas {
+        height: 320px!important;
+    }
+    #content .ip-comm-section .ip-custom-pagination {
+        margin: -1px 0 0 98px;
+        position: relative;
+    }
+        #content .ip-comm-section .ip-custom-pagination .custom-button-prev {
+            display: none!important;
+        }
+        #content .ip-comm-section .ip-custom-pagination .custom-button-next {
+            position: absolute;
+            right: 75px;
+        }
+        .ip-comm-section .fp-address {
+            font-size: 24px;
+        }
+        .single-neighborhood .ip-comm-section .fp-address {
+            font-size: 19px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .single-neighborhood .fp-price{
+            background: transparent;
+        }
+
+
+   .ip-comm-wrap .ip-title .section-title  {
+      /*padding-left: 140px;*/
+   }
+
+    .ip-comm-wrap .ip-about-section-3 .accent-line.accent-red {
+            /*right: 80%;*/
+    }
+	
+/***** Explore LA Neighborhoods *****/
+.ip-explore-la-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.ip-explore-la-section-1 .section-parallax-a.section-parralax-flow-left.section-parralax-white {
+	width: 13.45%;
+	left: 0;
+	top: 1px;
+	bottom: 44.25%;
+}
+
+.ip-explore-la-section-2 .section-parallax-a.section-parralax-flow-right {
+	left: 90%;
+	top: 56.25%;
+	bottom: 0;
+	right: -1000px;
+}
+
+.ip-explore-la-section-2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 121px;
+    background: #debf89;
+    /* width: 689px; */
+    width: calc(34.333% - -12px);
+    z-index: -1;
+}
+
+.ip-explore-la-section-1 .container, .ip-explore-la-list .container {
+	position: relative;
+	padding: 68px 15px 0;
+	max-width: 100%;
+	width: 1450px;
+	max-width: 90.625%;
+}
+
+.ip-explore-la-list .container {	
+	padding: 0 15px 78px;
+	overflow:hidden;
+}
+
+#content .ip-explore-la-section-1 .ip-title-wrap p {
+	max-width: 800px;
+	margin: 1.5em auto;
+	display: block;
+}
+
+.ip-explore-la-section-1 .accent-line.accent-red {
+	width: 1000px;
+	height: 1px;
+	right: 100%;
+	top: 66%;
+	margin-right: 43px;
+}
+
+.ip-explore-la-section-1 .accent-line-dot {
+	left: initial;
+	right: -9px;
+}
+
+.ip-explore-la-list canvas {
+	display: block;
+	width: 100%;
+	background-position: center;
+	background-size: cover;		
+}
+
+.ip-explore-la-list a:hover .neigh-img canvas {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+.neigh-item {
+	padding: 1px;
+	position: relative;
+}
+
+.neigh-img {
+	position: relative;
+}
+
+.neigh-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+.neigh-item a:hover .fp-details {
+    bottom: 50%;
+    transform: translateY(48.8%);
+}
+
+
+.neigh-details {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	overflow: hidden;
+	height: 100%;
+	max-height: 84px;
+	-webkit-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-o-transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.neigh-item a:hover .neigh-details {
+	height: 100%;
+	max-height: 172px;
+}
+
+.neigh-address {
+	display: block;
+	width: 257px;
+	height: 84px;
+	margin: 0 auto;
+	background: rgba(0,0,0,.7);
+	font-size: 20px;
+	letter-spacing: .1em;
+	line-height: 84px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.neigh-btn.btn-a {
+	width: 257px;
+	height: 83px;
+	padding: 0;
+	line-height: 83px;
+	background: #debf89;
+	border-color: #debf89;
+	color: #000;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;	
+}
+
+.neigh-btn.btn-a span::before, .neigh-btn.btn-a span::after {
+	background: #000;
+}
+#content-full
+#content {
+    width: 100%;
+    line-height:1.7;
+}
+.ip-oh-specs {
+    content: '';
+    position: relative;
+    bottom: 0;
+    left: -30px;
+    width: calc(100% + 30px);
+    background: #debf89;
+    z-index: 1;
+}
+.ip-oh-specs-wrapper {
+    position: absolute;
+    max-width: 500px;
+    left: 30px;
+    width: 100%;
+}
+.ip-oh-specs-wrapper span {
+    /*font-size: 35px;*/
+    font-size: 30px;
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.3;
+    /*padding: 25px 0;*/
+    padding: 31px 0;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 800;
+}
+.accent-line.accent-red {
+    background: rgba(131,41,32,.29);
+    position:absolute;
+    z-index: 1;
+}
+ip-ld-text .accent-line-dot {
+    left: initial;
+    right: -9px;
+}
+.accent-line-dot{
+width: 18px;
+height: 18px;
+display: block;
+position: absolute;
+top: -9px;
+left: -9px;
+}
+.accent-red .accent-line-dot:after {
+    background: #832920;
+}
+.accent-red .accent-line-dot:before {
+    border: 1px solid rgba(131,41,32,.29);
+}
+.accent-line-dot:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.29);
+
+}
+.accent-line-dot:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
