@@ -14,7 +14,10 @@ const MenuItem = ({children, link}) =>(
     </li>
 )
 const Footer = () => (
-    <footer style={{display:'block',clear:"both",color:"#FFF"}}>
+    <footer style={{
+        marginTop:100,
+        display:'block',clear:"both",color:"#FFF"
+    }}>
       <div className="footer-top">
         <div className="footer-container container">
           <div className="textwidget">
