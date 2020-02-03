@@ -20,7 +20,6 @@ const FeaturedOffices = () =>{
     return <section className="featcomm-wrap">
              <div className="textwidget">
                <div className="featcomm-container container">
-                 
                <TitleLine first="Featured" second="Offices"/>
                <div className="featcomm-row row">
                  <SingleOfficeItem> Ortigas East </SingleOfficeItem>

@@ -3,8 +3,6 @@ import useWindowDimensions from './utilities/useWindowDimensions'
 import image1 from '../assets/images-theme/greenhills_center.jpg'
 import '../assets/css/property-slider.css'
 import {Slider as SlickSlider} from 'react-slick'
-import SlideChangeHoooks from './testImport'
-import PropertyContent from './content-property'
 const SliderToggle = ()=>{
     let settings = {
         dots:true,
@@ -32,7 +30,7 @@ const PropertySlider = (props) => {
              <div className="main-property-slider-holder">
                <div className="property-slider">
                  <div className="property-slider-overlay" >
-                   <SingleSlide width={width} height={height-150} image={image1}/>
+                   <SingleSlide width={width} height={height-50} image={image1}/>
                  </div>
                </div>
              </div>
@@ -41,8 +39,6 @@ const PropertySlider = (props) => {
                </div>
              </div>
              </div> 
-
-             <PropertyContent/>
            </>
 
 }

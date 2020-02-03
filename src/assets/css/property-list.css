@@ -1,0 +1,291 @@
+.section-title span {
+    display: block;
+    letter-spacing: .4em;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+.section-title, #content .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: .034em;
+    color: #832920;
+    line-height: 1;
+}
+.ip-properties-wrap {
+
+}
+
+    .ip-properties-wrap {
+        top: -128px;
+        position: relative;
+        overflow: hidden;
+    }
+    .ip-prop-section {
+        position: relative;
+    }
+    .ip-prop-section-1 {
+        z-index: 1;
+    }
+        .ip-prop-section-1 .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+        }
+        .ip-prop-s1-left {
+            width: 43%;
+            /*padding-left: 140px;*/
+            /*padding-left: 9.86%;*/
+            padding-top: 87px;
+            margin-top: 128px;
+            position: relative;
+        }
+            #content .ip-prop-s1-left p {
+                color: #303030;
+            }
+            .ip-prop-s1-left .accent-line.accent-red {
+                width: 1000px;
+                height: 1px;
+                right: 100%;
+                top: 67%;
+                margin-right: 74px;
+            }
+                .ip-prop-s1-left .accent-line-dot {
+                    left: initial;
+                    right: -9px;
+                }
+        .ip-prop-s1-right {
+            width: 57%;
+            position: relative;
+            padding-bottom: 82px;
+        }
+            .ip-prop-s1-right:after {
+                content: '';
+                position: absolute;
+                height: 133px;
+                background: #debf89;
+                right: -1000px;
+                left: 2%;
+                bottom: 0;
+            }
+            .ip-prop-refine-search {
+                /*max-width:  725px;*/
+                width: 100%;
+                /*margin-top: -128px;*/
+                margin-top: 0;
+                /*margin-left: 40px;*/
+                margin-left: 6%;
+                position: relative;
+                z-index: 1;
+                padding: 30px 53px 30px;
+            }
+                .ip-prop-refine-search:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background: rgba(7,7,7,.85);
+                }
+                .ip-prop-refine-search:after {
+                    content: '';
+                    position: absolute;
+                    height: 133px;
+                    background: #debf89;
+                }
+                .ip-prop-s1-right .section-parallax-a.section-parralax-flow-right.section-parralax-white {
+                    right: -1000px;
+                    top: 128px;
+                    bottom: 51px;
+                    left: 100%;
+                }
+                #content .ip-prop-refine-search .section-title {
+                    color: #ede0cf;
+                    font-size: 48px;
+                    line-height: 1;
+                    letter-spacing: .02em;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                    .ip-prop-refine-search .section-title span {
+                        font-size: 18px;
+                        color: #fff;
+                        margin-bottom: 6px;
+                    }
+
+                .ip-prop-refine-search-form {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    font-size: 0;
+                    letter-spacing: 0;
+                }
+                    .ip-prop-rs-field {
+                        width: 50%;
+                        padding: 0 19px;
+                        margin-bottom: 6px;
+                    }
+                        .ip-prop-rs-field label,
+                        .ip-prop-rs-field .min-price,
+                        .ip-prop-rs-field .max-price,
+                        .ip-prop-rs-field select {
+                            font-size: 14px;
+                            letter-spacing: .24em;
+                            line-height: 1;
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        .ip-prop-rs-field label {
+                            display: block;
+                            margin-top: 16px;
+                            margin-bottom: 15px;
+                        }
+                        .ip-prop-rs-field select {
+                            display: block;
+                            width: 100%;
+                            border: none;
+                            border-bottom: 1px solid #696969;
+                            height: 47px;
+                            outline: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                        }
+                            .ip-prop-rs-field select::-ms-expand {
+                                display: none;
+                            }
+                            .ip-prop-rs-field select option {
+                                color: #000;
+                            }
+                        .ip-prop-rs-field .min-price,
+                        .ip-prop-rs-field .max-price {
+                            width: 50%;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-top: 11px;
+                        }
+                            .ip-prop-rs-field .max-price {
+                                text-align: right;
+                            }
+
+                        #slider-price.ui-slider {
+                            height: 2px;
+                            width: 100%;
+                            background: #696969;
+                            position: relative;
+                        }
+                            #slider-price.ui-slider .ui-slider-range {
+                                height: 100%;
+                                background: #debf89;
+                                position: absolute;
+                            }
+                            #slider-price.ui-slider .ui-slider-handle {
+                                background: #debf89;
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                                outline: none;
+                            }
+                    .ip-prop-refine-search-form .btn-a {
+                        display: block;
+                        background: transparent;
+                        margin: 18px auto 0;
+                        width: 127px;
+                        padding: 10.5px 0;
+                    }
+                        .ip-prop-refine-search-form .btn-a:hover {
+                            background: #debf89;
+                        }
+    .ip-prop-section-2 {
+
+    }
+        .ip-prop-section-2 .container {
+            position: relative;
+        }
+            .ip-prop-section-2 .section-parallax-a {
+                bottom: 0;
+                top: 58.6%;
+                left: 90%;
+                right: -1000px;
+            }
+        .ip-prop-list {
+            letter-spacing: 0;
+            font-size: 0;
+            margin-top: 13px;
+        }
+            .ip-prop-list .fp {
+                width: 50%!important;
+            }
+                .ip-prop-list .fp-img canvas {
+                    height: 497px!important;
+                }
+        #content .ip-prop-section-2 .ip-custom-pagination {
+            margin-top: -1px;
+            width: 41%;
+            /*margin-right: 128px;*/
+            margin-right: 9%;
+            padding: 34px 3.4% 38px;
+            z-index: 1;
+            position: relative;
+        }
+
+
+
+
+d
+#content .ip-prop-refine-search .section-title {
+    color: #ede0cf;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.ip-prop-refine-search-form .btn-a {
+    display: block;
+    background: #000000;
+    margin: 18px auto 0;
+    width: 127px;
+    padding: 10.5px 0;
+}
+a.btn-a, .btn-a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .26em;
+    color: #e5e5e5;
+    text-transform: uppercase;
+    padding: 17.5px 13px;
+    border: 2px solid #fff;
+    transition: color .3s ease, background .3s ease;
+}
+.ip-prop-refine-search .section-title {
+    color: #ede0cf;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+form.our-properties-form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    letter-spacing: 0;
+    width: 100%;
+}

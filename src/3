@@ -9,7 +9,7 @@ import About from './pages/About';
 import Estates from './pages/Estates';
 import NavBarMenu from './components/NavBarMenu';
 import Footer from './components/Footer'
-import Test from './pages/Test.js'
+import SlickSlider from './components/SlickSlider'
 const App = () =>{
   return (
     <div className="App">
@@ -19,7 +19,7 @@ const App = () =>{
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/estates" component={Estates} />
-              <Route path="/test" component={Test}/>
+              <Route path="/test" component={SlickSlider}/>
             </Switch>
           </Router>
       <Footer />
