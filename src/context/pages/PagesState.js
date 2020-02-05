@@ -30,7 +30,6 @@ const PagesState = props => {
     })
     const getProperty = url => {
         propertiesData.map((property) => {
-            console.log(property.slug,url)
             if (url === property.slug){
                 dispatch({
                     type:GET_SINGLE_PROPERTY,

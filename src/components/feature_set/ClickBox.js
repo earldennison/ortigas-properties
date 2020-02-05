@@ -2,7 +2,7 @@ import React from 'react'
 import ImageFilter from 'react-image-filter'
 
 
-const ClickBox =({fadeInPos, link, image, width, height } ) =>{
+const ClickBox =({fadeInPos, link, image, width, height, line1, line2 } ) =>{
 
     return <div className={`cta-col-1 col-md-3 col-sm-6 wow fadeIn${fadeInPos?fadeInPos:"Right"}`} style={{margin:"20px 0"}} data-wow-delay="1s">
              <a className="cta-link" href={link?link:'#'}>
@@ -21,8 +21,8 @@ const ClickBox =({fadeInPos, link, image, width, height } ) =>{
                  <div className="cta-overlay">
                    <div className="cta-center">
                      <div className="cta-center-item">
-                       <span className="cta-l1"> Find</span>
-                       <span className="cta-l2"> things</span>
+                       <span className="cta-l1"> {line1}  </span>
+                       <span className="cta-l2"> {line2}</span>
                      </div>
                    </div>
                  </div>

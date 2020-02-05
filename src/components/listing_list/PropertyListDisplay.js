@@ -12,7 +12,7 @@ const SinglePropertyDisplay = ({id,
                                 update_status,
                                 slug
                                 }) => {
-                                    console.log(update_status)
+                                    const image = image_dir? image_dir[0]: undefined;
     return <div className="fp">
              <Link className="dbl-tap-mob"
                    to={{
@@ -32,20 +32,19 @@ const SinglePropertyDisplay = ({id,
                  <canvas
                    height="497px"
                    width="708px"
-                   style={{
-                       backgroundImage:`url(https://www.carswellandassociates.com/wp-content/uploads/2019/07/Oriole_MLS-ORDER-1-1-1.jpg)`
-                   }}
+                   style={image?{
+                       backgroundImage:`url(${image})`
+                   }:{}}
                  />
                </div>
                <div className="fp-details">
                  <div className="fp-details-wrapper">
                    <div className="fp-details-inside">
                      <div className="fp-address">
-                       {name} 
+                       {name}
                      </div>
                    </div>
                    <div className="fp-ammenities">
-                     {/* 6beds <span>|</span> 7baths */}
                      {type}<span>|</span> {estate}
                    </div>
                  </div>
@@ -68,13 +67,11 @@ const SinglePropertyDisplay = ({id,
                                }
                            })()
                        }
-                    
                      </div>
                    </div>
 								 </div>
 							 </div>
              </Link>
-             
            </div>
 }
 
@@ -108,7 +105,6 @@ const PropertyListDisplay =({list}) => {
                           )}
                </div>
              </div>
-             
            </div>
 
 

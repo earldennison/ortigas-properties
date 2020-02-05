@@ -929,6 +929,7 @@ property-ld-text .accent-line.accent-gold {
 
         .ip-listing-details-content {
             padding-top: 76px;
+            overflow:hidden;
         }
 
             a.wv-link {

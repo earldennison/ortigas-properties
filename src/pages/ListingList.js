@@ -29,8 +29,7 @@ const ListingList = ({ match: { params } }) =>{
         history.push("/page-not-found")
     }
     const filter = () => ( listingList.filter(
-        (
-            {name, estate,type})=> {
+        ({name, estate,type})=> {
                 switch(params.page){
                 case "residences": return type === "Residential"
                 case "offices": return type === "Office"
@@ -40,16 +39,14 @@ const ListingList = ({ match: { params } }) =>{
                 case "greenhills-center": return estate === "Greenhills Center"
                 case "capitol-commons": return estate === "Capitol Commons"
                 case "greenhills-center": return estate === "Greenhills Center"
-            }
-        })
+                }}
+    ))
 
-               )
     return <Fragment>
 
              <Banner banner_dir={banner}/>
              <PropertyListDetails />
              <PropertyListDisplay list={filter()}/>
-             <Banner/>
            </Fragment>
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import useWindowDimensions from '../utilities/useWindowDimensions.js'
-
+import { hero_images } from '../../assets/images/index'
 
 const SingleSlide = (props) =>{
 
@@ -15,6 +15,7 @@ const SingleSlide = (props) =>{
     </div>
 }
 const Slider = () =>{ 
+
     const { height, width } = useWindowDimensions();
     const pixadd = 110;
     let mobile = width < height ? width : height + pixadd ;
@@ -46,16 +47,7 @@ const Slider = () =>{
                  data-cycle-tile-delay="100"
                  data-cycle-tile-vertical="true"
                  data-cycle-timeout="6000" >
-              <SingleSlide height={mobile} width={width}
-                image="https://sfeizigroup.com/wp-content/uploads/2017/05/slide-5.jpg" />
-              <SingleSlide height={mobile} width={width}
-                image="https://sfeizigroup.com/wp-content/uploads/2017/05/slide3.jpg" />
-              <SingleSlide height={mobile} width={width}
-                image="https://sfeizigroup.com/wp-content/uploads/2017/05/slide4.jpg" />
-              <SingleSlide height={mobile} width={width}
-                image="https://sfeizigroup.com/wp-content/uploads/2017/05/slide2.jpg" />
-              <SingleSlide height={mobile} width={width}
-                image="https://sfeizigroup.com/wp-content/uploads/2017/04/slide1-compressor-1600x920.jpg" />
+              {hero_images.map(path => <SingleSlide image={path}/>,)}
             </div>
           </div>
         </div>

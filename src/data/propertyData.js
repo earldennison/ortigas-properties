@@ -1,4 +1,3 @@
-
 import {
     imperium_images,
     avila_images,
@@ -16,6 +15,8 @@ import {
     ibiza_imgaes,
     glaston_images,
     connor_images,
+    ibp_images,
+    ortigasBuilding_images,
 } from '../assets/images/'
 const propertyData = [
     {
@@ -324,7 +325,7 @@ const propertyData = [
         type:"Office",
         caption:"Ortigas Building is one of the first buildings to rise in Ortigas Center. Located in the corners of Ortigas Avenue and Meralco Avenue, this 10-storey office building houses the headquarters of Ortigas & Company. ",
         amenities:undefined,
-        image_dir:undefined,
+        image_dir:ortigasBuilding_images,
         update_status:undefined,
         slug:"ortigas-building"
 
@@ -336,7 +337,7 @@ const propertyData = [
         type:"Office",
         caption:"The IBP Tower is a 27-storey office building located in the heart of the Ortigas Business District. It is a joint-venture of  Ortigas & Company with the Integrated Bar of the Philippines that aims to maximize the land use of a former parking lot of the IBP.",
         amenities:undefined,
-        image_dir:undefined,
+        image_dir:ibp_images,
         update_status:undefined,
         slug:"ibp-tower"
     },

@@ -1,3 +1,4 @@
+import hero_images from './hero'
 import imperium_images from './imperium_images/index'
 import avila_images from './avila'
 import empress_images from './empress'
@@ -14,6 +15,8 @@ import llieda_images from './llieda'
 import ibiza_imgaes from './ibiza'
 import glaston_images from './glaston'
 import connor_images from './connor'
+import ortigasBuilding_images from './ortigas_building'
+import ibp_images from './ibp'
 
 export {
     imperium_images,
@@ -31,5 +34,8 @@ export {
     llieda_images,
     ibiza_imgaes,
     glaston_images,
-    connor_images
+    connor_images,
+    hero_images,
+    ibp_images,
+    ortigasBuilding_images
 }

@@ -1,8 +1,14 @@
 import React from 'react'
 import TitleLine from './TitleLine'
+import { Link  } from 'react-router-dom'
+import { galleon_images,
+         imperium_images,
+         royalton_images,
+         connor_images,
+       } from '../../assets/images'
 
 const FeatPropItem = (props) => {
-    const {image,link, width} = props
+    const {image,link, width, estate, propertyName, updateStatus} = props
     return <div
              className="featprop-item"
              style={{
@@ -13,22 +19,24 @@ const FeatPropItem = (props) => {
                  minHeight:"1px",
              }}>
              <div className="featprop-item-wrap">
-               <a className="featprop-link" href={link?link:'#'}>
+               <Link className="featprop-link" to={link}>
                  <div className="featprop-item-main">
                    <div className="featprop-img" style={{backgroundImage:`url(${image})`}}/>
                    <div className="featprop-overlay">
                      <div className="featprop-overlay-border">
                        <div className="featprop-center-item">
-                         <span className="featprop-price">$1,950,000</span>
-                         <span className="featprop-address">11938 N Lake Drive, <br/>
-                           Boynton Beach FL 33436
+                         <span className="featprop-price">
+                           {propertyName}
                          </span>
-                         <span className="fp-bedsbaths">3 Beds<br/> 3 | 1 Baths</span>
+                         <span className="featprop-address">
+                           {estate}
+                         </span>
+                         <span className="fp-bedsbaths">{updateStatus}</span>
                        </div>
                      </div>
                    </div>
                  </div>
-               </a>
+               </Link>
              </div>
            </div>
 }
@@ -41,10 +49,26 @@ const FeaturedWrapper = (props) => {
             <div className="featprop-container container wow fadeInRight">
               <div className="featprop-slick-wrap">
                 <div className="featprop-holder" style={{position:"relative",display:"block",boxSizing:"border-box"}}>
-                  <FeatPropItem image="https://cdn.photos.sparkplatform.com/fl/20190628182857036028000000-o.jpg"/>
-                  <FeatPropItem image="https://cdn.photos.sparkplatform.com/fl/20190628182857036028000000-o.jpg"/>
-                  <FeatPropItem image="https://cdn.photos.sparkplatform.com/fl/20190628182857036028000000-o.jpg"/>
-                  <FeatPropItem image="https://cdn.photos.sparkplatform.com/fl/20190628182857036028000000-o.jpg"/>
+                  <FeatPropItem
+                    propertyName="The Galleon"
+                    estate="Ortigas Center"
+                    updateStatus="Pre-Selling"
+                    image={galleon_images[0]}/>
+                  <FeatPropItem
+                    propertyName="The Imperium"
+                    estate="Capitol Commons"
+                    updateStatus="Pre-Selling"
+                    image={imperium_images[0]}/>
+
+                  <FeatPropItem
+                    propertyName="Connor"
+                    estate="Greenhills Center"
+                    image={connor_images[0]}/>
+                  <FeatPropItem
+                    propertyName="Royalton"
+                    estate="Capitiol Commons"
+                    updateStatus="Turnover"
+                    image={royalton_images[0]}/>
                 </div>
               </div>
             </div>

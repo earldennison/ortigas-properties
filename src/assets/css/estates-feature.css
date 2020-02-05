@@ -1,0 +1,200 @@
+.searchmls-wrap {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1530px;
+	padding: 0 15px;
+}
+	#content #breadcrumbs {
+		padding: 0 17px;
+	}
+	.searchmls-title {
+		text-align: center;
+		margin: 56px 0 94px;
+	}
+		#content .section-title {
+		    display: inline-block;
+		    position: relative;
+		    padding: 5px 0 0 30px;
+		    text-align: left;
+		    font-family: 'News Cycle', sans-serif;
+		}
+			#content .section-title h1 {
+			    text-transform: uppercase;
+			    color: #2b2b2b;
+			    font-size: 60px;
+			    letter-spacing: 0.100em;
+			    line-height: 1;
+			    margin: 0 0 0;
+			    font-weight: 400;
+			}
+				#content .section-title h1 em {
+				    display: block;
+				    font-size: 20px;
+				    color: #828282;
+				    letter-spacing: 0.580em;
+				    font-style: normal;
+				    margin: 0 0 19px;
+				    line-height: 1;
+				}
+
+	.searchmls-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+    align-items:center;
+	}
+		.searchmls-content {
+			width: 65.85%;
+			padding-right: 58px;
+		}
+			#content ul.searchmls-tab {
+				list-style: none;
+				margin: 0 0 39px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+			}
+				#content ul.searchmls-tab li {
+					letter-spacing: 0;
+					padding: 0 30px;
+					position: relative;
+				}
+					#content ul.searchmls-tab .dropdown-menu li {
+						padding: 0;
+					}
+						#content ul.searchmls-tab .dropdown-menu li:after {
+							display: none;
+						}
+						#content ul.searchmls-tab .dropdown-menu li.active a {
+							color: #fff;
+							background: #248ea9;
+						}
+						#content ul.searchmls-tab .dropdown-menu li a {
+							padding-top: 7px;
+						}
+					#content ul.searchmls-tab li:first-child {
+						padding-left: 0;
+					}
+					#content ul.searchmls-tab li:last-child {
+						padding-right: 0;
+					}
+					#content ul.searchmls-tab li:after {
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 4px;
+						height: 17px;
+						width: 1px;
+						background: #dadada;
+					}
+					#content ul.searchmls-tab li a {
+						font-family: 'Prata', serif;
+						letter-spacing: .1em;
+						color: #2b2b2b;
+						font-size: 16px;
+						text-transform: uppercase;
+					}
+					#content ul.searchmls-tab li.active a {
+						color: #27869e;
+					}
+.searchmls-sidebar {
+			padding-top: 24px;
+      align-items:center;
+
+		}./
+			a.searchmls-cta:nth-child(odd) {
+				/*padding-right: 70px;*/
+			}
+				div.searchmls-cta:nth-child(odd) .searchmls-inner:before {
+					right: -70px;
+				}
+			div.searchmls-cta:nth-child(even) {
+				/*padding-left: 70px;*/
+				margin-left: auto;
+			}
+				div.searchmls-cta:nth-child(even) .searchmls-inner:before {
+					left: -70px;
+				}
+			div.searchmls-cta {
+				display: block;
+				position: relative;
+				margin-bottom: 72px;
+        margin-right: x72px;
+				transition: opacity .3s;
+			}
+				div.searchmls-cta:hover {
+					opacity: .8;
+				}
+				.searchmls-inner {
+					position: relative;
+					padding-top: 130px;
+				}
+					.searchmls-inner:before {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						height: 250px;
+						/*width: 437px;*/
+						height: 54.4%;
+						width: 98.87%;
+						max-width: 100%;
+						background: green;
+						z-index: -1;
+					}
+				.searchmls-cta-title {
+					font-family: 'Prata', serif;
+					font-size: 30px;
+					letter-spacing: .1em;
+					color: #2b2b2b;
+					text-transform: uppercase;
+					position: absolute;
+					top: 0;
+					left: 39px;
+					padding: 18px 0 114px 22px;
+					line-height: 1;
+				}
+					.searchmls-cta-title:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						width: 3px;
+						background: #28c3d4;
+					}
+					.searchmls-cta-title span {
+						font-family: 'News Cycle', sans-serif;
+						letter-spacing: .58em;
+						color: #828282;
+						display: block;
+						font-size: 20px;
+						margin-bottom: 14px;
+					}
+				div.searchmls-cta img {
+					display: block;
+					width: 100%;
+				}
+
+        .estate-paragraph-container-right{
+            contain:content;
+                       width:55%;
+                        
+        }
+
+        .estate-paragraph-right{
+            position:absolute;
+            margin-left:20%;
+            font-size:19px;
+            bottom:50px;
+        }
+
+        .estate-paragraph-left{
+            position:absolute;
+            margin-right:20%;
+            font-size:19px;
+            bottom:50px;
+        }

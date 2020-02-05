@@ -22,7 +22,10 @@ const FeaturedOffices = () =>{
                <div className="featcomm-container container">
                <TitleLine first="Featured" second="Offices"/>
                <div className="featcomm-row row">
-                 <SingleOfficeItem> Ortigas East </SingleOfficeItem>
+                 <SingleOfficeItem> The Galleon</SingleOfficeItem>
+                 <SingleOfficeItem> Glasston Tower </SingleOfficeItem>
+                 <SingleOfficeItem> IBP Tower</SingleOfficeItem>
+
                </div>
              </div>
              </div>
