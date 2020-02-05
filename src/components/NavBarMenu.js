@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/ortigasland.svg'
-import {useLocation } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 // import '../assets/css/bootstrap.css';
 // import '../assets/css/ai-basic.css';
 // import '../assets/css/header.css';
@@ -15,23 +15,21 @@ const Header = ({location, children}) =>{
 
 const LogoHolder = ({link}) =>( 
     <div className="logo-holder col-md-2 no-gutter">
-    <a href={link?link:"#"}>
+    < Link to={link}>
         <div className="textwidget">
           <img src={logo} alt="Ortigas Land Properties" style={{marginTop:"20px"}} className="img-responsive" />
         </div>
-      </a>
+      </Link>
     </div>
 )
 
-const MenuItem = (props) => {
-    const { link } = props;
+const MenuItem = ({link, children}) => {
     return <li className="menu-item" >
-             <a href={link} > { props.children  } </a>
+             <Link to={link}> { children  } </Link>
            </li>
 }
- 
 const MultiMenu = ({ name,link,ul_offset,children }) => {
-    
+
     return <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children " style = {{marginLeft:"43px"}}>
              <a   href= {link? link:'#'} > {name} </a>
       <ul className="sub-menu" style={{marginLeft:ul_offset? ul_offset:'0px'}}>
@@ -61,17 +59,19 @@ const NavBarMenu = () =>{
     
     return<Header location={location.pathname} >
       <NavBisection position="left">
-        <MenuItem link='test'> Estates </MenuItem>
-        <MenuItem> Malls </MenuItem>
-        <MultiMenu name="Residences" ul_offset="-63px">
-          <MultiMenu.Item link='todo'>
-            Estancia
-          </MultiMenu.Item>
+        <MenuItem link="/estates"> Estates </MenuItem>
+        <MenuItem link="/"> Malls </MenuItem>
+        <MultiMenu  link='/listing-list/residences' name="Residences" ul_offset="-63px">
+          <MultiMenu.Item link='/listing-list/ortigas-east' > Ortigas East </MultiMenu.Item>
+          <MultiMenu.Item link='/listing-list/capitol-commons' > Capitol Commons</MultiMenu.Item>
+          <MultiMenu.Item link='/listing-list/circulo-verde'> Circulo Verde</MultiMenu.Item>
+          <MultiMenu.Item link="/listing-list/greenhills-center"> Greenhillls Center</MultiMenu.Item>
+          <MultiMenu.Item link="ortigas-center"> Ortigas Center</MultiMenu.Item>
         </MultiMenu>
       </NavBisection>
-      <LogoHolder />
+            <LogoHolder link="/"/>
       <NavBisection position="right">
-        <MultiMenu name="Offices" ul_offset='-72px'>
+        <MultiMenu name="Offices" link="/listing-list/offices" ul_offset='-72px'>
           <MultiMenu.Item link="todo">
             Ortigas East
           </MultiMenu.Item>
@@ -82,10 +82,10 @@ const NavBarMenu = () =>{
               Ortigas Center
             </MultiMenu.Item>
         </MultiMenu>
-        <MenuItem >
+        <MenuItem link="/">
           About
         </MenuItem>
-        <MenuItem >
+        <MenuItem link="/">
           Contact
         </MenuItem>
       </NavBisection>

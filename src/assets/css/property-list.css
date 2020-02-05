@@ -246,7 +246,6 @@
 
 
 
-d
 #content .ip-prop-refine-search .section-title {
     color: #ede0cf;
     font-size: 48px;
@@ -464,6 +463,7 @@ section.section-2 {
                     width: 64.697%!important;
                 }
                 .fp {
+                    font-family:"Raleway";
                     display: inline-block;
                     vertical-align: bottom;
                     padding: 1px;
@@ -498,6 +498,13 @@ section.section-2 {
                                     transform: scale(1.1);
                                     -webkit-filter: grayscale(1);
                                             filter: grayscale(1);
+                                }
+
+                                .fp a:hover .fp-details-wrapper{
+                                    background:#1b541ca1;
+                                }
+                                .fp a:hover .fp-statuses-holder{
+                                    display:none;
                                 }
                             .fp-status {
                                 position: absolute;
@@ -547,7 +554,6 @@ section.section-2 {
                                 transform: translateY(48.8%);
                             }
                             .fp-address {
-                                font-family: 'Cormorant Garamond', serif;
                                 /*font-size: 24px;
                                 letter-spacing: .02em;*/
                                 font-size: 20px;
@@ -607,10 +613,13 @@ section.section-2 {
                                 bottom: -125px;
                             }
                             .fp-btn.btn-a {
+                                
                                 width: 257px;
                                 height: 83px;
                                 padding: 0;
                                 line-height: 83px;
+                                /*background: #debf89;
+                                border-color: #debf89; */
                                 background: #debf89;
                                 border-color: #debf89;
                                 color: #000;
@@ -719,17 +728,19 @@ section.section-2 {
                             transition:  all 0.4s ease-in-out;
 }
 .fp-statuses-btn-holder{
+    color:#fff;
     background: rgba(222, 191, 137, 0.6);
     padding: 5px;
     margin: 5px;
 }
 .fp-statuses-btn {
-    background: #debf89;
+    font-family: "PT Sans Narrow";
+    background: #A4904A94;
     padding: 5px 10px;
 }
 .fp-details-wrapper {
     padding: 0;
-    background: rgba(0,0,0,.7);
+    background:   #dddddd42;
     max-width: 80%;
     display: block;
     margin: 0 auto;
@@ -744,7 +755,6 @@ section.section-2 {
     bottom:-125px;
 }
 .fp-address {
-    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     letter-spacing: 0;
     color: #fff;
@@ -762,3 +772,4 @@ section.section-2 {
  .fp-details-inside {
      padding: 15px 0;
 }
+

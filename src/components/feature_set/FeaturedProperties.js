@@ -19,8 +19,8 @@ const FeatPropItem = (props) => {
                    <div className="featprop-overlay">
                      <div className="featprop-overlay-border">
                        <div className="featprop-center-item">
-                         <span className="fp-price">$1,950,000</span>
-                         <span className="fp-address">11938 N Lake Drive, <br/>
+                         <span className="featprop-price">$1,950,000</span>
+                         <span className="featprop-address">11938 N Lake Drive, <br/>
                            Boynton Beach FL 33436
                          </span>
                          <span className="fp-bedsbaths">3 Beds<br/> 3 | 1 Baths</span>

@@ -1,5 +1,4 @@
 import { Imperium } from '../assets/images/index.js'
-console.log(Imperium)
 const listingData ={
     properties:{
         Imperium:{

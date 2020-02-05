@@ -619,7 +619,7 @@ body{
 
 
 
-	.fp-price{
+	.featprop-price{
 		font-family: 'Lato', sans-serif;
 		font-size: 24px;
 		font-weight: 700;
@@ -628,7 +628,7 @@ body{
 		letter-spacing: 2px;
 	}
 
-	.fp-address{
+	.featprop-address{
 		font-family: 'Lato', sans-serif;
 		font-size: 12px;
 		font-weight: 400;

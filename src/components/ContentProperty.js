@@ -18,7 +18,8 @@ const ContentProperty = ({
             <ListingContent
               title={title}
               address1={address1}
-              address2={address2} >
+              address2={address2}
+            >
               {children}
             </ListingContent>
             <ListingSpecs
