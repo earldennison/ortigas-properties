@@ -762,7 +762,7 @@ property-ld-text .accent-line.accent-gold {
 
             .ip-ld-title {
                 font-size: 80px;
-                color: #832920;
+                color: #456f5c;
                 text-transform: uppercase;
                 font-family: 'Cormorant Garamond', serif;
                 letter-spacing: 1.5px;
@@ -831,7 +831,7 @@ property-ld-text .accent-line.accent-gold {
 */
     .ip-ld-specs {
         max-width: 500px;
-        background: #000;
+        background: linear-gradient( #477260,#123714 );
         position: relative;
         text-align: center;
         padding-bottom: 52px;
@@ -928,7 +928,6 @@ property-ld-text .accent-line.accent-gold {
             }
 
         .ip-listing-details-content {
-            padding-top: 76px;
             overflow:hidden;
         }
 

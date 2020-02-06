@@ -1,5 +1,6 @@
 import React from 'react'
-const ListingSpecs = ({estate, type, update}) => {
+import ConstructionUpdate from '../property/ConstructionUpdate.js'
+const ListingSpecs = ({estate, type, update_status}) => {
     return <div className="col-md-4">
              <div className="ip-ld-specs-content">
                <div className="ip-ld-specs">
@@ -21,6 +22,7 @@ const ListingSpecs = ({estate, type, update}) => {
 		                   <img src="https://www.carswellandassociates.com/wp-content/themes/carswellandassociates.com/images/listing-details/specs-border.png" alt="border" className="img-responsive"/>
 										 </span>
                    </div>
+                   <ConstructionUpdate update_status={update_status}  />
                  </div>
                </div>
     <div className="ip-oh-specs" style={{height:"62px"}}>

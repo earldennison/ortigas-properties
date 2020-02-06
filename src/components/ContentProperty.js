@@ -8,7 +8,7 @@ const ContentProperty = ({
     address2,
     estate,
     type,
-    update,
+    update_status,
     children,
 }) => (
     <article id="content" className="hfeed">
@@ -25,7 +25,7 @@ const ContentProperty = ({
             <ListingSpecs
               estate={estate}
               type={type}
-              update={update}
+              update_status={update_status}
             />
           </div>
         </div>

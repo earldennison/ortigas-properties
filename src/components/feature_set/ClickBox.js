@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ImageFilter from 'react-image-filter'
 
 
 const ClickBox =({fadeInPos, link, image, width, height, line1, line2 } ) =>{
 
     return <div className={`cta-col-1 col-md-3 col-sm-6 wow fadeIn${fadeInPos?fadeInPos:"Right"}`} style={{margin:"20px 0"}} data-wow-delay="1s">
-             <a className="cta-link" href={link?link:'#'}>
+             <Link className="cta-link" to={link?link:'#'}>
                <div className="cta-item-wrap">
                  <div className="cta-item-img">
                    <ImageFilter
@@ -27,7 +28,7 @@ const ClickBox =({fadeInPos, link, image, width, height, line1, line2 } ) =>{
                    </div>
                  </div>
                </div>
-             </a>
+             </Link>
            </div>
 
 }

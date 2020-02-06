@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/ortigasland.svg'
+import { HashLink } from 'react-router-hash-link'
 import { Link,useLocation } from 'react-router-dom';
 // import '../assets/css/bootstrap.css';
 // import '../assets/css/ai-basic.css';
@@ -23,15 +24,19 @@ const LogoHolder = ({link}) =>(
     </div>
 )
 
-const MenuItem = ({link, children}) => {
+const MenuItem = ({hashlink,link, children}) => {
     return <li className="menu-item" >
-             <Link to={link}> { children  } </Link>
+             {
+                 !hashlink?<Link to={link}> { children  } </Link> 
+                 : <HashLink smooth to={link}>{ children}  </HashLink> 
+
+             }
            </li>
 }
-const MultiMenu = ({ name,link,ul_offset,children }) => {
+const MultiMenu = ({ name,link,ul_offset,children, hashlink }) => {
 
     return <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children " style = {{marginLeft:"43px"}}>
-             <a   href= {link? link:'#'} > {name} </a>
+             <Link   to= {link? link:'#'} > {name} </Link>
       <ul className="sub-menu" style={{marginLeft:ul_offset? ul_offset:'0px'}}>
         {children}
       </ul>
@@ -40,9 +45,9 @@ const MultiMenu = ({ name,link,ul_offset,children }) => {
 
 MultiMenu.Item = ({link,toggle_color,children}) =>{
     return <li className="menu-item" >
-             <a href={link} style={toggle_color} >
+             <Link to={link} style={toggle_color} >
              {children}
-             </a>
+             </Link>
            </li>
 }
 const NavBisection = (props) => {
@@ -72,20 +77,24 @@ const NavBarMenu = () =>{
             <LogoHolder link="/"/>
       <NavBisection position="right">
         <MultiMenu name="Offices" link="/listing-list/offices" ul_offset='-72px'>
-          <MultiMenu.Item link="todo">
+          <MultiMenu.Item link="/listing-list/ortigas-east">
             Ortigas East
           </MultiMenu.Item>
-          <MultiMenu.Item link="todo">
+          <MultiMenu.Item link="/listing-list/capitol-commons">
             Capitiol Commons
           </MultiMenu.Item>
-            <MultiMenu.Item link="todo">
+            <MultiMenu.Item link="/listing-list/ortigas-center">
               Ortigas Center
             </MultiMenu.Item>
         </MultiMenu>
-        <MenuItem link="/">
+        <MenuItem link="/#about" hashlink={true} >
           About
         </MenuItem>
-        <MenuItem link="/">
+        <MenuItem link={{
+            pathname:'/',
+
+            hash:'#about'
+        }}>
           Contact
         </MenuItem>
       </NavBisection>

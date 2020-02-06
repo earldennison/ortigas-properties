@@ -12,19 +12,23 @@ const FeatureSet = () => {
         <div className="textwidget">
           <div className="cta-container container">
             <div className="cta-row row">
+              
               <ClickBox
+                link="/listing-list/residences" 
                  image={ Imperium }
                  line1={"Our"}
                  line2={"Residences"}
                />
 
               <ClickBox
+                link="/estates"
                 image={ hero_images[0]}
                 line1={"Our"}
                 line2={"Estates"}
               />
 
               <ClickBox
+                link="/listing-list/offices"
                 image={ glaston_images[0]}
                 line1={"Our"}
                 line2={"Offices"}

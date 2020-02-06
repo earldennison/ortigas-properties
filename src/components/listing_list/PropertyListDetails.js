@@ -2,9 +2,11 @@ import React, { Fragment } from 'react'
 import '../../assets/css/property-list.css'
 
 
-const PropertyListDescription = ({title,pre_title, description}) =>{
+const PropertyListDescription = ({title,pre_title, description, list_right}) =>{
 
-    return <div className="ip-prop-s1-left ip-title-wrap ip-title-left">
+    return <div className="ip-prop-s1-left ip-title-wrap ip-title-left"
+                style={!list_right?{width:"100%"}:''}
+           >
       <div className="ip-title">
         <h1 className="section-title">
           <span> {pre_title}</span>
@@ -14,7 +16,10 @@ const PropertyListDescription = ({title,pre_title, description}) =>{
       <div className="accent-line accent-red">
         <i className="accent-line-dot"></i>
       </div>
-      <p>
+             <p style={{
+                 fontSize:20,
+                 marginTop:20
+             }}>
         {description}
       </p>
     </div>
@@ -47,7 +52,7 @@ const PropertyListRight =({first,second}) => (
     </div>
 
 )
-const PropertyListDetails = ({pre_title,title, description}) => {
+const PropertyListDetails = ({pre_title,title, description, list_right}) => {
 
     return <Fragment>
              <div className="ip-properties-wrap">
@@ -58,7 +63,7 @@ const PropertyListDetails = ({pre_title,title, description}) => {
                      title={title}
                      description={description}
                    />
-                   <PropertyListRight/>
+    {list_right && <PropertyListRight/>}
                  </div>
                </div>
              </div>

@@ -47,7 +47,7 @@ const propertyData = [
         caption:"The Glaston Tower is a 34-storey office building that is poised to become Metro Manila's next prime business address. It will breathe new life into the office space market with its exquisite form and functionaltiy. It is currently pursuing LEED certifcation. ",
         amenities:undefined,
         image_dir: glaston_images,
-        update_status:undefined,
+        update_status:2,
         slug:"glaston-tower"
 
     },
@@ -152,7 +152,7 @@ const propertyData = [
     {
         id:"GHCNR",
         name:"Connor",
-        estate:"Greenhills",
+        estate:"Greenhills Center",
         type:"Residential",
         caption:"The Connor at Greenhhills is designed for function and convenience with its carefully planned unit layouts, featuring spacious cuts that are ideal for the young and the upwardly mobile, the growing families, and those looking for their own exciting and fresh spot in a vibrant yet familiar community.",
         amenities:[
@@ -313,7 +313,7 @@ const propertyData = [
         caption:"Located atop Estancia at Capitol Commons, Estancia Offices offers a 8-floors of stress-free work environment. It currently houses international and local tenants such as Maersk, Verizon, and the like.",
         amenities:undefined,
         image_dir: estancia_images,
-        update_status:undefined,
+        update_status:2,
         slug:"estancia-offices"
 
     },

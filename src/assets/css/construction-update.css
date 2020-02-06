@@ -1,0 +1,14 @@
+.construction_update{
+    color:#fff;
+} 
+
+.construction_update-active{
+    border: thin solid white;
+}
+
+.construction_stages{
+    margin:10px;
+    padding:10px;
+}
+
+

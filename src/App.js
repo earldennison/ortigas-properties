@@ -3,7 +3,10 @@ import {
     BrowserRouter as Router,
     Route,
     Switch,
+    useLocation,
+    useEffect
        } from 'react-router-dom'
+import ScrollToTop from './components/utilities/ScrollToTop'
 import './assets/css/amh-header.css'
 import './assets/css/ai-media.css'
 import './assets/css/ai-google-fonts.css'
@@ -17,11 +20,15 @@ import blank from './pages/blank.js'
 import PagesState from "./context/pages/PagesState"
 import ListingList from './pages/ListingList'
 import Property from './pages/Property'
+
+
 const App = () => {
+
 
   return (<div className="App">
       <PagesState>
         <Router >
+          <ScrollToTop/>
             <NavBarMenu />
             <Switch>
               <Route exact path="/" component={Home} />

@@ -50,21 +50,25 @@ const FeaturedWrapper = (props) => {
               <div className="featprop-slick-wrap">
                 <div className="featprop-holder" style={{position:"relative",display:"block",boxSizing:"border-box"}}>
                   <FeatPropItem
+                    link="/properties/galleon"
                     propertyName="The Galleon"
                     estate="Ortigas Center"
                     updateStatus="Pre-Selling"
                     image={galleon_images[0]}/>
                   <FeatPropItem
+                    link="/properties/imperium"
                     propertyName="The Imperium"
                     estate="Capitol Commons"
                     updateStatus="Pre-Selling"
                     image={imperium_images[0]}/>
 
                   <FeatPropItem
+                    link="/properties/connor"
                     propertyName="Connor"
                     estate="Greenhills Center"
                     image={connor_images[0]}/>
                   <FeatPropItem
+                    link="/properties/royalton"
                     propertyName="Royalton"
                     estate="Capitiol Commons"
                     updateStatus="Turnover"

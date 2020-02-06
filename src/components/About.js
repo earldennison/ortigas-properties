@@ -2,7 +2,7 @@ import React from 'react'
 import ImageFilter from 'react-image-filter'
 import logo from '../assets/images/ortigasland.svg'
 const About = () => (
-    <section className="welcome-wrap wow fadeIn">
+    <section className="welcome-wrap wow fadeIn" id="about">
       <div className="welcome-container container">
         <div className="welcome-row row">
           <div className="welcome-left col-md-7 welcome-content">

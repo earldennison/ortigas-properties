@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import TitleLine from './TitleLine.js'
 const SingleOfficeItem =(props)=> {
     const {link} = props
     return <div className="featcomm-col col-md-4 wow">
-             <a className="featcomm-link" href={link?link:'a'}>
+             <Link className="featcomm-link" to={link?link:'a'}>
                <div className="featcomm-item-wrap">
                  <div className="featcomm-overlay">
                    <div className="featcomm-center">
@@ -13,7 +14,7 @@ const SingleOfficeItem =(props)=> {
                    </div>
                  </div>
                </div>
-             </a>
+             </Link>
            </div>
 }
 const FeaturedOffices = () =>{
@@ -22,9 +23,18 @@ const FeaturedOffices = () =>{
                <div className="featcomm-container container">
                <TitleLine first="Featured" second="Offices"/>
                <div className="featcomm-row row">
-                 <SingleOfficeItem> The Galleon</SingleOfficeItem>
-                 <SingleOfficeItem> Glasston Tower </SingleOfficeItem>
-                 <SingleOfficeItem> IBP Tower</SingleOfficeItem>
+                 <SingleOfficeItem
+                   link="/properties/estancia-offices">
+                   Estancia Offices
+                 </SingleOfficeItem>
+                 <SingleOfficeItem
+                   link="/properties/glaston-tower" >
+                   Glaston Tower
+                 </SingleOfficeItem>
+                 <SingleOfficeItem
+                   link="/properties/ibp-tower"
+                 > IBP Tower
+                 </SingleOfficeItem>
 
                </div>
              </div>
