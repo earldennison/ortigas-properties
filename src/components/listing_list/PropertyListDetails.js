@@ -12,38 +12,43 @@ const PropertyListDescription = ({
       // className='ip-prop-s1-left ip-title-wrap ip-title-left'
       style={!list_right ? { width: '100%' } : ''}>
       <div
-        className='ip-title p-1 mt-5 d-inline-block'
+        data-aos='fade-up'
+        data-aos-delay='50'
+        className='ip-title p-2'
         style={{
-          background: '#fff',
+          fontFamily: "'Cormorant Garamond', serif",
+          textTransform: 'uppercase',
+          fontWeight: '400',
+          letterSpacing: '.034em',
+          color: '#456f5c',
+          lineHeight: '1',
+          display: 'inline-block',
+          background: 'rgba(255, 255, 255, 0.9)',
+          boxShadow:
+            '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          marginTop: '80px',
         }}>
-        <h1 className='section-title hide-on-small-only m-0 '>
-          <span> {pre_title}</span>
-          {title}
-        </h1>
-        <h3
-          className=' hide-on-med-and-up m-0 d-inline-block'
-          style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            textTransform: 'uppercase',
-            fontWeight: '400',
-            letterSpacing: '.034em',
-            color: '#456f5c',
-            lineHeight: '1',
-            display: 'inline-block !important',
-          }}>
-          <span style={{ fontSize: '20px', display: 'inline-block' }}>
-            {pre_title}
-          </span>
-          {title}
-        </h3>
+        <div className='hide-on-small-only m-0'>
+          <span style={{ fontSize: '20px' }}>{pre_title}</span>
+        </div>
+
+        <h1 className='hide-on-small-only m-0'>{title}</h1>
+
+        <div className='hide-on-med-and-up m-0 d-inline-block'>
+          <span style={{ fontSize: '20px' }}>{pre_title}</span>
+        </div>
+
+        <h3 className='hide-on-med-and-up m-0 d-inline-block'>{title}</h3>
       </div>
       {/* <div className='accent-line accent-red'>
         <i className='accent-line-dot'></i>
       </div> */}
       <p
+        data-aos='fade-up'
+        data-aos-delay='200'
         style={{
           fontSize: 20,
-          marginTop: 20,
+          marginTop: 40,
         }}>
         {description}
       </p>
