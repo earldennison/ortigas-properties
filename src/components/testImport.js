@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { Component } from 'react';
+import Slider from 'react-slick';
 
 export default class SlideChangeHooks extends Component {
   state = {
     activeSlide: 0,
-    activeSlide2: 0
+    activeSlide2: 0,
   };
   render() {
     const settings = {
@@ -14,7 +14,7 @@ export default class SlideChangeHooks extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       beforeChange: (current, next) => this.setState({ activeSlide: next }),
-      afterChange: current => this.setState({ activeSlide2: current })
+      afterChange: (current) => this.setState({ activeSlide2: current }),
     };
     return (
       <div>

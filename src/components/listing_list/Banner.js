@@ -1,18 +1,16 @@
-import React from 'react'
-import '../../assets/css/banner.css'
-const Banner = ({banner_dir}) =>{
-    return <div className="ip-banner-wrap">
-             <div className="ip-banner">
-               <canvas
-                 width="1600"
-                 height="350"
-                 style={{
-                     backgroundImage:`url(${banner_dir})`
-                 }}
-               />
-             </div>
-           </div>
+import React from 'react';
+import '../../assets/css/banner.css';
+import styled from 'styled-components';
 
+const Banner = styled.div`
+  width: 100%;
+  height: 70vh;
+  background: url(${({ banner_dir }) => banner_dir}) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+`;
 
-}
-export default Banner
+export default Banner;

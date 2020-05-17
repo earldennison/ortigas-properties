@@ -1,8 +1,6 @@
 import React from 'react';
-const blank = ({location:{state }}) => {
+const blank = ({ location: { state } }) => {
+  return <div></div>;
+};
 
-    return <div>
-    </div>
-}
-    
-export default blank
+export default blank;
