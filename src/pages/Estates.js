@@ -8,15 +8,27 @@ import PropertyListDetails from '../components/listing_list/PropertyListDetails'
 import PropertyListDisplay from '../components/listing_list/PropertyListDisplay.js';
 import propertyData from '../data/propertyData';
 import EstateFeature from '../components/estates/EstateFeature.js';
+
+import styled from 'styled-components';
+
+const EstatesContainer = styled.section`
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+`;
+
 const Estates = () => (
-  <Fragment>
-    <Banner banner_dir={imperiumBanner} />
-    <PropertyListDetails
-      pre_title='Our'
-      title='estates'
-      description=' We have been building traditions, creating indelible experiences, and developing new inspirations for living '
-    />
+  <>
+    <Banner banner_dir={imperiumBanner} snap>
+      <PropertyListDetails
+        pre_title='Our'
+        title='estates'
+        description=' We have been building traditions, creating indelible experiences, and developing new inspirations for living '
+      />
+    </Banner>
     <EstateFeature />
-  </Fragment>
+  </>
 );
 export default Estates;

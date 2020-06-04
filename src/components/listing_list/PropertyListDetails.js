@@ -1,6 +1,16 @@
 import React, { Fragment } from 'react';
 import '../../assets/css/property-list.css';
 
+import styled from 'styled-components';
+
+const PLDContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+`;
+
 const PropertyListDescription = ({
   title,
   pre_title,
@@ -8,26 +18,26 @@ const PropertyListDescription = ({
   list_right,
 }) => {
   return (
-    <div
-      // className='ip-prop-s1-left ip-title-wrap ip-title-left'
-      style={!list_right ? { width: '100%' } : ''}>
+    <div className='text-center'>
       <div
         data-aos='fade-up'
-        data-aos-delay='50'
+        data-aos-delay='1200'
         className='ip-title p-2'
+        // data-jarallax-element='240'
         style={{
           fontFamily: "'Cormorant Garamond', serif",
           textTransform: 'uppercase',
-          fontWeight: '400',
+          fontWeight: 'bold',
           letterSpacing: '.034em',
-          color: '#456f5c',
+          color: '#43b27e',
           lineHeight: '1',
           display: 'inline-block',
-          background: 'rgba(255, 255, 255, 0.9)',
-          boxShadow:
-            '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-          marginTop: '80px',
-        }}>
+          // background: 'rgba(255, 255, 255, 0.9)',
+          // boxShadow:
+          //   '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+          // marginTop: '80px',
+        }}
+      >
         <div className='hide-on-small-only m-0'>
           <span style={{ fontSize: '20px' }}>{pre_title}</span>
         </div>
@@ -45,11 +55,26 @@ const PropertyListDescription = ({
       </div> */}
       <p
         data-aos='fade-up'
-        data-aos-delay='200'
+        data-aos-delay='1400'
         style={{
           fontSize: 20,
           marginTop: 40,
-        }}>
+          color: '#fff',
+        }}
+        className='hide-on-small-only'
+      >
+        {description}
+      </p>
+      <p
+        data-aos='fade-up'
+        data-aos-delay='1400'
+        style={{
+          fontSize: 14,
+          marginTop: 25,
+          color: '#fff',
+        }}
+        className='hide-on-med-and-up show-on-small'
+      >
         {description}
       </p>
     </div>
@@ -73,7 +98,8 @@ const PropertyListRight = ({ first, second }) => (
                   <div
                     className='custom-select-list-option'
                     data-url='all'
-                    data-value='all'>
+                    data-value='all'
+                  >
                     All
                   </div>
                 </div>
@@ -90,20 +116,14 @@ const PropertyListRight = ({ first, second }) => (
 );
 const PropertyListDetails = ({ pre_title, title, description, list_right }) => {
   return (
-    <Fragment>
-      <div className='ip-properties-wrap'>
-        <div className='ip-prop-section ip-prop-section-1'>
-          <div className='container new-container'>
-            <PropertyListDescription
-              pre_title={pre_title}
-              title={title}
-              description={description}
-            />
-            {list_right && <PropertyListRight />}
-          </div>
-        </div>
-      </div>
-    </Fragment>
+    <PLDContainer>
+      <PropertyListDescription
+        pre_title={pre_title}
+        title={title}
+        description={description}
+      />
+      {list_right && <PropertyListRight />}
+    </PLDContainer>
   );
 };
 

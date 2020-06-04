@@ -3,34 +3,32 @@ import logo from '../assets/images/ortigasland.svg';
 import { HashLink } from 'react-router-hash-link';
 import { Link, useLocation } from 'react-router-dom';
 import SideNav, { SideBarToggleButton } from './SideNav';
-// import '../assets/css/bootstrap.css';
-// import '../assets/css/ai-basic.css';
-// import '../assets/css/header.css';
+import styled from 'styled-components';
+
+const HeaderContainer = styled.div`
+  background: rgba(255, 255, 255, ${({ isTop }) => (isTop ? '.8' : '.8')});
+  position: fixed;
+  top: ${({ top }) => top};
+  z-index: 999;
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+`;
+
 const Header = ({ location, children, top, isTop }) => {
   let toggle = location === '/estates' ? 'format-link' : '';
   return (
-    <div
+    <HeaderContainer
       id='header'
       className={`${toggle}`}
-      style={{
-        background: '#fff',
-        position: 'fixed',
-        top,
-        zIndex: '999',
-        width: '100%',
-        display: 'block',
-        boxShadow:
-          '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)',
-        transition: 'top 0.3s',
-      }}>
-      <div
-        className='row'
-        style={{
-          marginBottom: isTop ? '20px' : '10px',
-        }}>
+      top={top}
+      isTop={isTop}
+    >
+      <div className='row' style={{ marginBottom: isTop ? '20px' : '10px' }}>
         {children}
       </div>
-    </div>
+    </HeaderContainer>
   );
 };
 
@@ -53,9 +51,12 @@ const MenuItem = ({ hashlink, link, children }) => {
   return (
     <li className='menu-item'>
       {!hashlink ? (
-        <Link to={link}> {children} </Link>
+        <Link to={link} style={{ fontWeight: 'bold' }}>
+          {' '}
+          {children}{' '}
+        </Link>
       ) : (
-        <HashLink smooth to={link}>
+        <HashLink smooth to={link} style={{ fontWeight: 'bold' }}>
           {children}
         </HashLink>
       )}
@@ -66,14 +67,19 @@ const MultiMenu = ({ name, link, ul_offset, children, hashlink, isTop }) => {
   return (
     <li
       className='menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children '
-      style={{ marginLeft: '43px' }}>
-      <Link to={link ? link : '#'}> {name} </Link>
+      style={{ marginLeft: '43px' }}
+    >
+      <Link to={link ? link : '#'} style={{ fontWeight: 'bold' }}>
+        {' '}
+        {name}{' '}
+      </Link>
       <ul
         className='sub-menu'
         style={{
           marginLeft: ul_offset ? ul_offset : '0px',
           marginTop: isTop ? '-24px' : '-33px',
-        }}>
+        }}
+      >
         {children}
       </ul>
     </li>
@@ -93,7 +99,8 @@ const NavBisection = (props) => {
   const { position } = props;
   return (
     <div
-      className={`col-md-5 hidden-sm hidden-xs navi-col navi-${position}-col`}>
+      className={`col-md-5 hidden-sm hidden-xs navi-col navi-${position}-col`}
+    >
       <ul className={`navi navi-${position}`}>{props.children}</ul>
     </div>
   );
@@ -123,7 +130,8 @@ const NavBarMenu = () => {
             link='/listing-list/residences'
             name='Residences'
             ul_offset='-63px'
-            isTop={top === '0'}>
+            isTop={top === '0'}
+          >
             <MultiMenu.Item link='/listing-list/ortigas-east'>
               Ortigas East
             </MultiMenu.Item>
@@ -147,7 +155,8 @@ const NavBarMenu = () => {
             name='Offices'
             link='/listing-list/offices'
             ul_offset='-72px'
-            isTop={top === '0'}>
+            isTop={top === '0'}
+          >
             <MultiMenu.Item link='/listing-list/ortigas-east'>
               Ortigas East
             </MultiMenu.Item>
@@ -166,7 +175,8 @@ const NavBarMenu = () => {
               pathname: '/',
 
               hash: '#about',
-            }}>
+            }}
+          >
             Contact
           </MenuItem>
         </NavBisection>

@@ -9,7 +9,8 @@ export const SideBarToggleButton = () => {
     <button
       className='sidenav-trigger btn-flat'
       data-target='slide-out'
-      style={{ color: '#A59229' }}>
+      style={{ color: '#A59229' }}
+    >
       <i class='fas fa-bars'></i>
     </button>
   );
@@ -41,7 +42,8 @@ const ItemContainer = ({ children, to, title, icon }) => {
           className='waves-effect'
           to={to}
           onClick={handleToggle}
-          style={{ postion: 'relative' }}>
+          style={{ postion: 'relative' }}
+        >
           {title}
           <i class={icon} style={{ color: '#A59229' }}></i>
           <i
@@ -51,7 +53,8 @@ const ItemContainer = ({ children, to, title, icon }) => {
               position: 'absolute',
               top: '0',
               right: '0',
-            }}></i>
+            }}
+          ></i>
         </a>
       </li>
       <li
@@ -59,7 +62,8 @@ const ItemContainer = ({ children, to, title, icon }) => {
           position: 'relative',
           display: toggle ? 'block' : 'none',
           transition: 'top 0.3s',
-        }}>
+        }}
+      >
         {children}
       </li>
     </>
@@ -78,7 +82,8 @@ class SideBar extends Component {
           className='sidenav'
           ref={(sidenav) => {
             this.sidenav = sidenav;
-          }}>
+          }}
+        >
           <li>
             <div className='user-view p-4'>
               <img alt='img' src={logo} />

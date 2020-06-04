@@ -23,10 +23,21 @@ import Property from './pages/Property';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import styled from 'styled-components';
+
+const AppContainer = styled.section`
+  /* position: relative;
+  width: 100%;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; */
+`;
 
 const App = () => {
   return (
-    <div className='App'>
+    <AppContainer className='App'>
       <PagesState>
         <Router>
           <ScrollToTop />
@@ -43,7 +54,7 @@ const App = () => {
           <Footer />
         </Router>
       </PagesState>
-    </div>
+    </AppContainer>
   );
 };
 

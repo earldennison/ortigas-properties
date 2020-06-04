@@ -8,18 +8,20 @@ const MenuItem = ({ children, link }) => (
       padding: '2px 10px',
       display: 'inline-block',
       veriticalAlign: 'top',
-    }}>
+    }}
+  >
     <a href={link ? link : '#'}>{children}</a>
   </li>
 );
 const Footer = () => (
   <footer
     style={{
-      marginTop: 100,
+      // marginTop: 100,
       display: 'block',
       clear: 'both',
       color: '#FFF',
-    }}>
+    }}
+  >
     <div className='footer-top'>
       <div className='footer-container container'>
         <div className='textwidget'>
@@ -70,7 +72,8 @@ const Footer = () => (
               Website Development by{' '}
               <a
                 href='#'
-                style={{ textDecoration: 'underline', fontWeight: 'bold' }}>
+                style={{ textDecoration: 'underline', fontWeight: 'bold' }}
+              >
                 Edge Computing
               </a>
             </div>
