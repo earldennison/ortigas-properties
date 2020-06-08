@@ -3,7 +3,6 @@ import PropertySlider from '../components/PropertySlider.js';
 import ContentProperty from '../components/ContentProperty.js';
 
 import Banner from '../components/listing_list/Banner';
-import imperiumBanner from '../assets/images/banners/Imperium_Banner021.jpg';
 import PropertyListDetails from '../components/listing_list/PropertyListDetails';
 import PropertyListDisplay from '../components/listing_list/PropertyListDisplay.js';
 import propertyData from '../data/propertyData';
@@ -21,7 +20,7 @@ const EstatesContainer = styled.section`
 
 const Estates = () => (
   <>
-    <Banner banner_dir={imperiumBanner} snap>
+    <Banner banner_dir='assets/images/banners/Imperium_Banner021.jpg' snap>
       <PropertyListDetails
         pre_title='Our'
         title='estates'

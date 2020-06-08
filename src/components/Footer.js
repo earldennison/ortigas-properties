@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/images/ortigasland.svg';
 import ImageFilter from 'react-image-filter';
 const MenuItem = ({ children, link }) => (
   <li
@@ -8,8 +7,7 @@ const MenuItem = ({ children, link }) => (
       padding: '2px 10px',
       display: 'inline-block',
       veriticalAlign: 'top',
-    }}
-  >
+    }}>
     <a href={link ? link : '#'}>{children}</a>
   </li>
 );
@@ -20,8 +18,7 @@ const Footer = () => (
       display: 'block',
       clear: 'both',
       color: '#FFF',
-    }}
-  >
+    }}>
     <div className='footer-top'>
       <div className='footer-container container'>
         <div className='textwidget'>
@@ -72,15 +69,14 @@ const Footer = () => (
               Website Development by{' '}
               <a
                 href='#'
-                style={{ textDecoration: 'underline', fontWeight: 'bold' }}
-              >
+                style={{ textDecoration: 'underline', fontWeight: 'bold' }}>
                 Edge Computing
               </a>
             </div>
             <div className='footer-realtor-logo'>
               <img
                 alt=''
-                src={logo}
+                src='assets/images/ortigasland.svg'
                 style={{ filter: 'brightness(0) invert(1)', width: 100 }}
               />
             </div>

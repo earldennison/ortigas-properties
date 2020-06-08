@@ -1,12 +1,6 @@
 import React from 'react';
 import TitleLine from './TitleLine';
 import { Link } from 'react-router-dom';
-import {
-  galleon_images,
-  imperium_images,
-  royalton_images,
-  connor_images,
-} from '../../assets/images';
 
 const FeatPropItem = (props) => {
   const { image, link, width, estate, propertyName, updateStatus } = props;
@@ -62,28 +56,28 @@ const FeaturedWrapper = (props) => {
                 propertyName='The Galleon'
                 estate='Ortigas Center'
                 updateStatus='Pre-Selling'
-                image={galleon_images[0]}
+                image='assets/images/galleon/Galleon_01.jpg'
               />
               <FeatPropItem
                 link='/properties/imperium'
                 propertyName='The Imperium'
                 estate='Capitol Commons'
                 updateStatus='Pre-Selling'
-                image={imperium_images[0]}
+                image='assets/images/imperium_images/Imperium01_large.jpg'
               />
 
               <FeatPropItem
                 link='/properties/connor'
                 propertyName='Connor'
                 estate='Greenhills Center'
-                image={connor_images[0]}
+                image='assets/images/conor/Conor_01_large.jpg'
               />
               <FeatPropItem
                 link='/properties/royalton'
                 propertyName='Royalton'
                 estate='Capitiol Commons'
                 updateStatus='Turnover'
-                image={royalton_images[0]}
+                image='assets/images/royalton/Royalton_01_large.jpg'
               />
             </div>
           </div>

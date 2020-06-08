@@ -1,6 +1,5 @@
-import React, { Children } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { hero_images } from '../../assets/images';
 import '../../assets/css/estates-feature.css';
 import styled from 'styled-components';
 import Mask from '../Mask';
@@ -63,45 +62,40 @@ const EstateFeatureItem = ({
     <EstateFeatureItemContainer
       src={image}
       className='jarallax'
-      data-jarallax='{"speed": 0.2}'
-    >
+      data-jarallax='{"speed": 0.2}'>
       <Mask data-aos='fade-in' data-aos-delay='1000' />
       <EstateFeatureItemInner
         data-aos='fade-up'
         data-aos-delay='1200'
         right={right}
-        color={color}
-      >
+        color={color}>
         <h4
           className={right ? 'mr-4 mt-2 mb-0' : 'ml-4 mt-2 mb-0'}
           style={{ color: '#82848A' }}
           data-aos='fade-in'
-          data-aos-delay='1400'
-        >
+          data-aos-delay='1400'>
           {pre_title}
         </h4>
         <h2
           className={right ? 'mr-4 mt-0 mb-2' : 'ml-4 mt-0 mb-2'}
           data-aos='fade-in'
-          data-aos-delay='1600'
-        >
-          {title.split(' ').map((t) => (
-            <>
+          data-aos-delay='1600'>
+          {title.split(' ').map((t, i) => (
+            <Fragment key={i}>
               <span>{t}</span>
               <br />
-            </>
+            </Fragment>
           ))}
         </h2>
         <H6
           className={right ? 'mr-4' : 'ml-4'}
           data-aos='fade-in'
-          data-aos-delay='1800'
-        >
+          data-aos-delay='1800'>
           {children}
         </H6>
         <Link
           to={link}
-          class={
+          className={
             right
               ? 'waves-effect waves-light btn-flat mr-4'
               : 'waves-effect waves-light btn-flat ml-4'
@@ -109,8 +103,7 @@ const EstateFeatureItem = ({
           data-aos='fade-in'
           data-aos-delay='2000'
           data-aos-offset='-100'
-          style={{ color }}
-        >
+          style={{ color }}>
           Learn More
         </Link>
       </EstateFeatureItemInner>
@@ -147,57 +140,51 @@ const EstateFeatureItem = ({
 };
 
 const EstateFeature = () => {
-  let [greenhills, center, capitol, east, circulo] = hero_images;
   return (
     <>
       <EstateFeatureItem
-        image={capitol}
+        image='assets/images/hero/capitol.jpg'
         pre_title='The'
         title='Capitiol Commons'
         link='/listing-list/capitol-commons'
         color='#28c3d4'
-        right
-      >
+        right>
         Capitol Commons is the new destination for luxury living.
       </EstateFeatureItem>
       <EstateFeatureItem
-        image={center}
+        image='assets/images/hero/center.jpg'
         pre_title='The'
         title='Ortigas Center'
         link='/listing-list/ortigas-center'
-        color='#e53935'
-      >
+        color='#e53935'>
         Ortigas Center sets itself apaart as one of the most important central
         buisness districts (CBD) in Metro Manila
       </EstateFeatureItem>
       <EstateFeatureItem
-        image={circulo}
+        image='assets/images/hero/circulo.jpg'
         pre_title='The Sactuary'
         title='Circulo Verde'
         link='/listing-list/circulo-verde'
         color='#43a047'
-        right
-      >
+        right>
         A suburban sanctuary in the city
       </EstateFeatureItem>
       <EstateFeatureItem
-        image={east}
+        image='assets/images/hero/east.jpg'
         pre_title='The new center'
         title='Ortigas East'
         link='/listing-list/ortigas-east'
-        color='#4db6ac'
-      >
+        color='#4db6ac'>
         Ortigas East is Ortias Land's 16-hectare eco-estate along the C5
         corridor
       </EstateFeatureItem>
       <EstateFeatureItem
-        image={greenhills}
+        image='assets/images/hero/greenhills.jpg'
         pre_title='A space reborn'
         title='Greenhills Center'
         link='/listing-list/greenhills'
         color='#fb8c00'
-        right
-      >
+        right>
         Witness Greenhills Center's multi-billion redevelopment into a complete
         shop-play-work-live community
       </EstateFeatureItem>

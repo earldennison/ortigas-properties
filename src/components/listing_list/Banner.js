@@ -26,8 +26,7 @@ const Banner = ({ banner_dir, children, snap, noMask }) => (
     src={banner_dir}
     className='jarallax'
     data-jarallax='{"speed": 0.2}'
-    snap={snap}
-  >
+    snap={snap}>
     {noMask ? null : (
       <>
         <Mask data-aos='fade-in' data-aos-delay='1000' />
@@ -35,16 +34,15 @@ const Banner = ({ banner_dir, children, snap, noMask }) => (
           data-aos='fade-up'
           data-aos-delay='1600'
           data-aos-offset='-500'
-          class='btn-floating waves-effect waves-light white btn-flat'
+          className='btn-floating waves-effect waves-light white btn-flat'
           style={{
             position: 'absolute',
             bottom: 50,
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 3,
-          }}
-        >
-          <i class='fas fa-chevron-down text-dark'></i>
+          }}>
+          <i className='fas fa-chevron-down text-dark'></i>
         </a>
       </>
     )}

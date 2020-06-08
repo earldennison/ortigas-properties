@@ -1,6 +1,5 @@
 import React from 'react';
 import ImageFilter from 'react-image-filter';
-import logo from '../assets/images/ortigasland.svg';
 const About = () => (
   <section className='welcome-wrap wow fadeIn' id='about'>
     <div className='welcome-container container'>
@@ -12,7 +11,7 @@ const About = () => (
                 <img
                   className='img-responsive'
                   alt='Ortigas Land'
-                  src={logo}
+                  src='assets/images/ortigasland.svg'
                   style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>

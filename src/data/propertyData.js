@@ -1,23 +1,196 @@
-import {
-  imperium_images,
-  avila_images,
-  empress_images,
-  estancia_images,
-  galleon_images,
-  gardenHomes_images,
-  viridian_images,
-  royalton_images,
-  maven_images,
-  majorica_images,
-  seville_images,
-  verdantTowers_images,
-  llieda_images,
-  ibiza_imgaes,
-  glaston_images,
-  connor_images,
-  ibp_images,
-  ortigasBuilding_images,
-} from '../assets/images/';
+export const hero_images = [
+  '/assets/images/hero/capitol.jpg',
+  '/assets/images/hero/center.jpg',
+  '/assets/images/hero/circulo.jpg',
+  '/assets/images/hero/east.jpg',
+  '/assets/images/hero/greenhills.jpg',
+  '/assets/images/hero/verdant.jpg',
+];
+export const imperium_images = [
+  '/assets/images/imperium_images/Imperium01_large.jpg',
+  '/assets/images/imperium_images/Imperium02_large.jpg',
+  '/assets/images/imperium_images/Imperium03_large.jpg',
+  '/assets/images/imperium_images/Imperium04_large.jpg',
+  '/assets/images/imperium_images/Imperium05_large.jpg',
+  '/assets/images/imperium_images/Imperium06_large.jpg',
+  '/assets/images/imperium_images/Imperium07_large.jpg',
+];
+export const avila_images = [
+  '/assets/images/avila/Avila_01_large.jpg',
+  '/assets/images/avila/Avila_02_large.jpg',
+  '/assets/images/avila/Avila_03_large.jpg',
+  '/assets/images/avila/Avila_04_large.jpg',
+];
+export const empress_images = [
+  '/assets/images/empress/EMPRESS_01.jpg',
+  '/assets/images/empress/EMPRESS_02.jpg',
+  '/assets/images/empress/EMPRESS_03.jpg',
+  '/assets/images/empress/EMPRESS_04.jpg',
+  '/assets/images/empress/EMPRESS_05.jpg',
+  '/assets/images/empress/EMPRESS_06.jpg',
+  '/assets/images/empress/EMPRESS_07.jpg',
+];
+export const estancia_images = [
+  '/assets/images/estancia_offices/Estancia_Office_Banner.jpg',
+];
+export const galleon_images = [
+  '/assets/images/galleon/Galleon_01.jpg',
+  '/assets/images/galleon/Galleon_02.jpg',
+  '/assets/images/galleon/Galleon_03.jpg',
+  '/assets/images/galleon/Galleon_04.jpg',
+  '/assets/images/galleon/Galleon_05.jpg',
+];
+export const gardenHomes_images = [
+  '/assets/images/garden_homes/CVGH_01_large.jpg',
+  '/assets/images/garden_homes/CVGH_02_large.jpg',
+  '/assets/images/garden_homes/CVGH_03_large.jpg',
+  '/assets/images/garden_homes/CVGH_04_large.jpg',
+  '/assets/images/garden_homes/CVGH_05_large.jpg',
+  '/assets/images/garden_homes/CVGH_06_large.jpg',
+];
+export const viridian_images = [
+  '/assets/images/viridian/Viridian_01_large.jpg',
+  '/assets/images/viridian/Viridian_02_large.jpg',
+  '/assets/images/viridian/Viridian_03_large.jpg',
+  '/assets/images/viridian/Viridian_04_large.jpg',
+  '/assets/images/viridian/Viridian_05_large.jpg',
+  '/assets/images/viridian/Viridian_06_large.jpg',
+  '/assets/images/viridian/Viridian_07_large.jpg',
+];
+export const royalton_images = [
+  '/assets/images/royalton/Royalton_01_large.jpg',
+  '/assets/images/royalton/Royalton_02_large.jpg',
+  '/assets/images/royalton/Royalton_03_large.jpg',
+  '/assets/images/royalton/Royalton_04_large.jpg',
+  '/assets/images/royalton/Royalton_05_large.jpg',
+  '/assets/images/royalton/Royalton_06_large.jpg',
+  '/assets/images/royalton/Royalton_07_large.jpg',
+];
+export const maven_images = [
+  '/assets/images/maven/Maven_01_large.jpg',
+  '/assets/images/maven/Maven_02_large.jpg',
+  '/assets/images/maven/Maven_03_large.jpg',
+  '/assets/images/maven/Maven_04_large.jpg',
+  '/assets/images/maven/Maven_05_large.jpg',
+  '/assets/images/maven/Maven_06_large.jpg',
+  '/assets/images/maven/Maven_07_large.jpg',
+];
+export const majorica_images = [
+  '/assets/images/majorica/Majorca_01_large.jpg',
+  '/assets/images/majorica/Majorca_02_large.jpg',
+  '/assets/images/majorica/Majorca_03_large.jpg',
+  '/assets/images/majorica/Majorca_04_large.jpg',
+  '/assets/images/majorica/Majorca_05_large.jpg',
+  '/assets/images/majorica/Majorca_06_large.jpg',
+];
+export const seville_images = [
+  '/assets/images/seville/Seville_01_large.jpg',
+  '/assets/images/seville/Seville_02_large.jpg',
+  '/assets/images/seville/Seville_03_large.jpg',
+  '/assets/images/seville/Seville_04_large.jpg',
+  '/assets/images/seville/Seville_05_large.jpg',
+  '/assets/images/seville/Seville_06_large.jpg',
+];
+export const verdantTowers_images = [
+  '/assets/images/verdant_towers/Maple_01_large.jpg',
+  '/assets/images/verdant_towers/Maple_02_large.jpg',
+  '/assets/images/verdant_towers/Maple_03_large.jpg',
+];
+export const llieda_images = [
+  '/assets/images/llieda/Lleida_01_large.jpg',
+  '/assets/images/llieda/Lleida_02_large.jpg',
+  '/assets/images/llieda/Lleida_03_large.jpg',
+  '/assets/images/llieda/Lleida_04_large.jpg',
+];
+export const ibiza_imgaes = [
+  '/assets/images/ibiza/Ibiza_01_large.jpg',
+  '/assets/images/ibiza/Ibiza_02_large.jpg',
+  '/assets/images/ibiza/Ibiza_03_large.jpg',
+  '/assets/images/ibiza/Ibiza_04_large.jpg',
+  '/assets/images/ibiza/Ibiza_05_large.jpg',
+  '/assets/images/ibiza/Ibiza_06_large.jpg',
+];
+export const glaston_images = [
+  '/assets/images/glaston/Glaston_01_large.jpg',
+  '/assets/images/glaston/Glaston_02_large.jpg',
+  '/assets/images/glaston/Glaston_03_large.jpg',
+];
+export const connor_images = [
+  '/assets/images/connor/Connor_01_large.jpg',
+  '/assets/images/connor/Connor_02_large.jpg',
+  '/assets/images/connor/Connor_03_large.jpg',
+  '/assets/images/connor/Connor_03_large.jpg',
+];
+export const ibp_images = ['/assets/images/ibp/IBP_Office_Banner_large.jpg'];
+export const ortigasBuilding_images = [
+  '/assets/images/ortigas_building/Ortigas_Building_Office_Banner_large.jpg',
+];
+
+export const pages = [
+  {
+    path: '/residences',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'Our Luxiourious',
+    title: 'Residences',
+    description: ` 
+        Ortigas Land is the benchmark for modern urban living in Metro Manila. For more than 8 decades, Ortigas has built a legacy of building great places for work and play, thereby becoming an important landmark in the metro. `,
+  },
+  {
+    path: '/offices',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'Our Towering',
+    title: 'Offices',
+    description: `
+Ortigas Center is one of the most important financial and commercial districts in the country, home to the Philippines’ most esteemed organizations and corporations, as well as malls that set the standard of city entertainment. It is a bustling nest of industries, from banks to BPOs, retail to real estate, and media to manufacturing.
+`,
+  },
+  {
+    path: '/ortigas-east',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'The New Center',
+    title: 'Ortigas East',
+    description: `
+Ortigas East, formerly known as Frontera Verde, is a 16-hectare development project at the corner of Ortigas Avenue and E. Rodriguez Jr. Avenue (C-5) in Barangay Ugong, Pasig City.
+`,
+  },
+  {
+    path: '/ortigas-center',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'The Business District',
+    title: 'Ortigas Center',
+    description: `
+Before Ortigas Land acquired development rights to the area, the 4,033-hectare estate was unused and barren. Eventually, fractions of the huge land were sold in big parcels and others were developed by Ortigas, including the CBD. During the 1960s, it started blooming into a financial center, initially housing structures like the Chronicle Building (now Benpres) and the Meralco building.
+`,
+  },
+  {
+    path: '/greenhills-center',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'A Space Reborn',
+    title: 'Greenhills Center ',
+    description: `
+Greenhills Center takes in pride in being Metro Manila’s first-ever shopping complex. Widely known for years as a must-stop destination for tourists, foreign dignitaries, and celebrities, it is currently undergoing a multi-billion redevelopment. Soon, the Greenhills Center that has shaped generations will be ready to serve the new generation.
+`,
+  },
+  {
+    path: '/circulo-verde',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'The Sanctuary',
+    title: 'Circulo Verde',
+    description: `
+Circulo Verde is a 10-hectare comunity that allows you to enjoy nature and modern convenience at the same time. Whether you are starting to be more independent, growing a family of your own, or enjoying being empty nesters, there is a living space that fits your lifestyle. You can choose from a variety of living spaces from studio, one, two, or three-bedroom units, or even a townhouse at the Garden Homes.
+`,
+  },
+  {
+    path: '/capitol-commons',
+    banner: '/assets/images-theme/greenhills_center.jpg',
+    pre_title: 'Luxurious Living',
+    title: 'Capitiol Commons',
+    description: `
+Capitol Commons is a 10-hectare mixed-use development located along Meralco Ave. corner Shaw Blvd. Ortigas Center, Pasig City (Former Rizal Provincial Capitol) that features modern living spaces, office facilities, and commercial areas that showcase premium retail and entertainment selections.
+`,
+  },
+];
+
 const propertyData = [
   {
     id: 'OEVERTWR',

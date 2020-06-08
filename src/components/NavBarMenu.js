@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/images/ortigasland.svg';
 import { HashLink } from 'react-router-hash-link';
 import { Link, useLocation } from 'react-router-dom';
 import SideNav, { SideBarToggleButton } from './SideNav';
@@ -23,8 +22,7 @@ const Header = ({ location, children, top, isTop }) => {
       id='header'
       className={`${toggle}`}
       top={top}
-      isTop={isTop}
-    >
+      isTop={isTop}>
       <div className='row' style={{ marginBottom: isTop ? '20px' : '10px' }}>
         {children}
       </div>
@@ -37,7 +35,7 @@ const LogoHolder = ({ link }) => (
     <Link to={link}>
       <div className='textwidget'>
         <img
-          src={logo}
+          src='/assets/images/ortigasland.svg'
           alt='Ortigas Land Properties'
           style={{ marginTop: '20px' }}
           className='img-responsive'
@@ -67,8 +65,7 @@ const MultiMenu = ({ name, link, ul_offset, children, hashlink, isTop }) => {
   return (
     <li
       className='menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children '
-      style={{ marginLeft: '43px' }}
-    >
+      style={{ marginLeft: '43px' }}>
       <Link to={link ? link : '#'} style={{ fontWeight: 'bold' }}>
         {' '}
         {name}{' '}
@@ -78,8 +75,7 @@ const MultiMenu = ({ name, link, ul_offset, children, hashlink, isTop }) => {
         style={{
           marginLeft: ul_offset ? ul_offset : '0px',
           marginTop: isTop ? '-24px' : '-33px',
-        }}
-      >
+        }}>
         {children}
       </ul>
     </li>
@@ -99,8 +95,7 @@ const NavBisection = (props) => {
   const { position } = props;
   return (
     <div
-      className={`col-md-5 hidden-sm hidden-xs navi-col navi-${position}-col`}
-    >
+      className={`col-md-5 hidden-sm hidden-xs navi-col navi-${position}-col`}>
       <ul className={`navi navi-${position}`}>{props.children}</ul>
     </div>
   );
@@ -130,8 +125,7 @@ const NavBarMenu = () => {
             link='/listing-list/residences'
             name='Residences'
             ul_offset='-63px'
-            isTop={top === '0'}
-          >
+            isTop={top === '0'}>
             <MultiMenu.Item link='/listing-list/ortigas-east'>
               Ortigas East
             </MultiMenu.Item>
@@ -155,8 +149,7 @@ const NavBarMenu = () => {
             name='Offices'
             link='/listing-list/offices'
             ul_offset='-72px'
-            isTop={top === '0'}
-          >
+            isTop={top === '0'}>
             <MultiMenu.Item link='/listing-list/ortigas-east'>
               Ortigas East
             </MultiMenu.Item>
@@ -175,15 +168,17 @@ const NavBarMenu = () => {
               pathname: '/',
 
               hash: '#about',
-            }}
-          >
+            }}>
             Contact
           </MenuItem>
         </NavBisection>
         <div className='col hide-on-large-only pt-2 d-flex flex-row'>
           <div className='logo-holder'>
             <Link to='/'>
-              <img src={logo} alt='Ortigas Land Properties' />
+              <img
+                src='/assets/images/ortigasland.svg'
+                alt='Ortigas Land Properties'
+              />
             </Link>
           </div>
         </div>

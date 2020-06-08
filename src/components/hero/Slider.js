@@ -1,6 +1,6 @@
 import React from 'react';
 import useWindowDimensions from '../utilities/useWindowDimensions.js';
-import { hero_images } from '../../assets/images/index';
+import { hero_images } from '../../data/propertyData';
 
 const SingleSlide = (props) => {
   const { image, alt, title, height, width } = props;

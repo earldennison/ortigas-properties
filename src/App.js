@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-  useEffect,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/utilities/ScrollToTop';
 import './assets/css/amh-header.css';
 import './assets/css/ai-media.css';
@@ -18,8 +12,8 @@ import Footer from './components/Footer';
 import Test from './pages/Test.js';
 import blank from './pages/blank.js';
 import PagesState from './context/pages/PagesState';
-import ListingList from './pages/ListingList';
 import Property from './pages/Property';
+import ListingListRoutes from './ListingListRoutes';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -47,7 +41,7 @@ const App = () => {
             <Route path='/estates' component={Estates} />
             <Route path='/test' component={Test} />
             <Route path='/properties/:slug' component={Property} />
-            <Route path='/listing-list/:page' component={ListingList} />
+            <ListingListRoutes path='/listing-list' />
             <Route exact path='/page-not-found' component={blank} />
             <Route component={blank} />
           </Switch>

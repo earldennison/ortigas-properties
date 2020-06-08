@@ -1,6 +1,5 @@
 import React from 'react';
 import useWindowDimensions from './utilities/useWindowDimensions';
-import image1 from '../assets/images-theme/greenhills_center.jpg';
 import '../assets/css/property-slider.css';
 import { Slider as SlickSlider } from 'react-slick';
 const SliderToggle = () => {
@@ -45,7 +44,11 @@ const PropertySlider = (props) => {
         <div className='main-property-slider-holder'>
           <div className='property-slider'>
             <div className='property-slider-overlay'>
-              <SingleSlide width={width} height={height - 50} image={image1} />
+              <SingleSlide
+                width={width}
+                height={height - 50}
+                image='assets/images-theme/greenhills_center.jpg'
+              />
             </div>
           </div>
         </div>

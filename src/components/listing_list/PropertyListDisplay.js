@@ -1,6 +1,11 @@
 import React from 'react';
 import '../../assets/css/property-list.css';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const Canvas = styled.canvas`
+  background-image: url(${({ img }) => img});
+`;
 
 const SinglePropertyDisplay = ({
   id,
@@ -31,17 +36,7 @@ const SinglePropertyDisplay = ({
           },
         }}>
         <div className='fp-img'>
-          <canvas
-            height='497px'
-            width='708px'
-            style={
-              image
-                ? {
-                    backgroundImage: `url(${image})`,
-                  }
-                : {}
-            }
-          />
+          <Canvas height='497px' width='708px' img={image} />
         </div>
         <div className='fp-details'>
           <div className='fp-details-wrapper'>

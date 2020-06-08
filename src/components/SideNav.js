@@ -2,16 +2,13 @@ import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import M from 'materialize-css';
 
-import logo from '../assets/images/ortigasland.svg';
-
 export const SideBarToggleButton = () => {
   return (
     <button
       className='sidenav-trigger btn-flat'
       data-target='slide-out'
-      style={{ color: '#A59229' }}
-    >
-      <i class='fas fa-bars'></i>
+      style={{ color: '#A59229' }}>
+      <i className='fas fa-bars'></i>
     </button>
   );
 };
@@ -20,9 +17,9 @@ const Item = ({ children, icon, to }) => {
     <li>
       <Link className='waves-effect' to={to}>
         {icon == null ? (
-          <i class='fas fa-dot-circle' style={{ fontSize: '.7rem' }}></i>
+          <i className='fas fa-dot-circle' style={{ fontSize: '.7rem' }}></i>
         ) : (
-          <i class={icon} style={{ color: '#A59229' }}></i>
+          <i className={icon} style={{ color: '#A59229' }}></i>
         )}
         {children}
       </Link>
@@ -42,30 +39,27 @@ const ItemContainer = ({ children, to, title, icon }) => {
           className='waves-effect'
           to={to}
           onClick={handleToggle}
-          style={{ postion: 'relative' }}
-        >
+          style={{ postion: 'relative' }}>
           {title}
-          <i class={icon} style={{ color: '#A59229' }}></i>
+          <i className={icon} style={{ color: '#A59229' }}></i>
           <i
-            class={toggle ? 'fas fa-angle-up' : 'fas fa-angle-down'}
+            className={toggle ? 'fas fa-angle-up' : 'fas fa-angle-down'}
             style={{
               color: '#A59229',
               position: 'absolute',
               top: '0',
               right: '0',
-            }}
-          ></i>
+            }}></i>
         </a>
       </li>
-      <li
+      <div
         style={{
           position: 'relative',
           display: toggle ? 'block' : 'none',
           transition: 'top 0.3s',
-        }}
-      >
+        }}>
         {children}
-      </li>
+      </div>
     </>
   );
 };
@@ -82,11 +76,10 @@ class SideBar extends Component {
           className='sidenav'
           ref={(sidenav) => {
             this.sidenav = sidenav;
-          }}
-        >
+          }}>
           <li>
             <div className='user-view p-4'>
-              <img alt='img' src={logo} />
+              <img alt='img' src='/assets/images/ortigasland.svg' />
             </div>
           </li>
           <Item to='/estates' icon='fas fa-home'>
