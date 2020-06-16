@@ -1,11 +1,11 @@
-import { Imperium } from '../assets/images/index.js'
-const listingData ={
-    properties:{
-        Imperium:{
-            "images": Imperium
-        },
-        Royalton:{}
-    }
-}
+import { Imperium } from '../assets/images/index.js';
+const listingData = {
+  properties: {
+    Imperium: {
+      images: Imperium,
+    },
+    Royalton: {},
+  },
+};
 
-export default listingData
+export default listingData;
