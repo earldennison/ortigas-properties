@@ -20,13 +20,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import styled from 'styled-components';
 
 const AppContainer = styled.section`
-  /* position: relative;
+  position: relative;
   width: 100%;
   height: 100vh;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
-  overflow-y: scroll; */
+  overflow-y: scroll;
 `;
 
 const App = () => {

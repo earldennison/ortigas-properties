@@ -20,7 +20,7 @@ const EstatesContainer = styled.section`
 
 const Estates = () => (
   <>
-    <Banner banner_dir='assets/images/banners/Imperium_Banner021.jpg' snap>
+    <Banner banner_dir='/assets/images/banners/Imperium_Banner021.jpg' snap>
       <PropertyListDetails
         pre_title='Our'
         title='estates'

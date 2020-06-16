@@ -20,7 +20,7 @@ const SinglePropertyDisplay = ({
 }) => {
   const image = image_dir ? image_dir[0] : undefined;
   return (
-    <div className='fp'>
+    <div className='col-md-4 col-12 p-md-4 py-5 fp'>
       <Link
         className='dbl-tap-mob'
         to={{
@@ -35,7 +35,7 @@ const SinglePropertyDisplay = ({
             update_status,
           },
         }}>
-        <div className='fp-img'>
+        <div className='fp-img' style={{ maxHeight: '400px' }}>
           <Canvas height='497px' width='708px' img={image} />
         </div>
         <div className='fp-details'>
@@ -80,35 +80,33 @@ const SinglePropertyDisplay = ({
 const PropertyListDisplay = ({ list }) => {
   return (
     <div className='ip-prop-section ip-prop-section-2'>
-      <div className='container new-container'>
-        <div className='ip-prop-list'>
-          {list.map(
-            ({
-              id,
-              name,
-              estate,
-              type,
-              caption,
-              amenities,
-              image_dir,
-              update_status,
-              slug,
-            }) => (
-              <SinglePropertyDisplay
-                key={id}
-                id={id}
-                name={name}
-                estate={estate}
-                type={type}
-                caption={caption}
-                amenities={amenities}
-                image_dir={image_dir}
-                update_status={update_status}
-                slug={slug}
-              />
-            )
-          )}
-        </div>
+      <div className='row justify-content-md-center ip-prop-list'>
+        {list.map(
+          ({
+            id,
+            name,
+            estate,
+            type,
+            caption,
+            amenities,
+            image_dir,
+            update_status,
+            slug,
+          }) => (
+            <SinglePropertyDisplay
+              key={id}
+              id={id}
+              name={name}
+              estate={estate}
+              type={type}
+              caption={caption}
+              amenities={amenities}
+              image_dir={image_dir}
+              update_status={update_status}
+              slug={slug}
+            />
+          )
+        )}
       </div>
     </div>
   );

@@ -1,15 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/css/estates-feature.css';
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { fadeInLeft } from 'react-animations';
 import Mask from '../Mask';
+import VizSensor from 'react-visibility-sensor';
 
-var row_style = {
-  alignItems: 'center',
-};
-var itemStyle = {
-  maxWidth: '45%',
-};
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
 
 const EstateFeatureItemContainer = styled.div`
   position: relative;
@@ -31,20 +28,26 @@ const H6 = styled.h6`
 
 const EstateFeatureItemInner = styled.div`
   position: absolute;
-  top: 25%;
+  top: 50%;
   ${({ right }) => (right ? 'right: 50px;' : 'left: 50px;')}
   transform: translateY(-50%);
   z-index: 3;
   text-align: ${({ right }) => (right ? 'right' : 'left')};
   ${({ right, color }) =>
     right
-      ? `border-right: 2px solid ${color};`
+      ? 'border-right: 2px solid ${color};'
       : `border-left: 2px solid ${color};`}
   color: #fff;
-  font-family: Prata, serif;
   letter-spacing: 0.1em;
   line-height: 1;
   max-width: 300px;
+
+  /* animation: ${({ isVisible }) =>
+    isVisible
+      ? css`
+          1s ${fadeInLeftAnimation};
+        `
+      : ''}; */
 `;
 
 const EstateFeatureItem = ({
@@ -57,56 +60,66 @@ const EstateFeatureItem = ({
   color,
   right,
 }) => {
-  console.log(position);
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <EstateFeatureItemContainer
       src={image}
       className='jarallax'
       data-jarallax='{"speed": 0.2}'>
-      <Mask data-aos='fade-in' data-aos-delay='1000' />
-      <EstateFeatureItemInner
-        data-aos='fade-up'
-        data-aos-delay='1200'
-        right={right}
-        color={color}>
-        <h4
-          className={right ? 'mr-4 mt-2 mb-0' : 'ml-4 mt-2 mb-0'}
-          style={{ color: '#82848A' }}
-          data-aos='fade-in'
-          data-aos-delay='1400'>
-          {pre_title}
-        </h4>
-        <h2
-          className={right ? 'mr-4 mt-0 mb-2' : 'ml-4 mt-0 mb-2'}
-          data-aos='fade-in'
-          data-aos-delay='1600'>
-          {title.split(' ').map((t, i) => (
-            <Fragment key={i}>
-              <span>{t}</span>
-              <br />
-            </Fragment>
-          ))}
-        </h2>
-        <H6
-          className={right ? 'mr-4' : 'ml-4'}
-          data-aos='fade-in'
-          data-aos-delay='1800'>
-          {children}
-        </H6>
-        <Link
-          to={link}
-          className={
-            right
-              ? 'waves-effect waves-light btn-flat mr-4'
-              : 'waves-effect waves-light btn-flat ml-4'
-          }
-          data-aos='fade-in'
-          data-aos-delay='2000'
-          data-aos-offset='-100'
-          style={{ color }}>
-          Learn More
-        </Link>
-      </EstateFeatureItemInner>
+      <Mask /*data-aos='fade-in' data-aos-delay='1000'*/ />
+      <VizSensor
+        onChange={(isVisibleNow) => {
+          setIsVisible(isVisibleNow);
+        }}>
+        <EstateFeatureItemInner
+          // data-aos='fade-up'
+          // data-aos-delay='1200'
+          isVisible={isVisible}
+          right={right}
+          color={color}>
+          <h4
+            className={right ? 'mr-4 mt-2 mb-0' : 'ml-4 mt-2 mb-0'}
+            // data-aos='fade-in'
+            // data-aos-delay='1400'
+            style={{ color: '#82848A', fontFamily: 'Prata, serif' }}>
+            {pre_title}
+          </h4>
+          <h2
+            className={right ? 'mr-4 mt-0 mb-2' : 'ml-4 mt-0 mb-2'}
+            style={{ fontFamily: 'Prata, serif' }}
+            // data-aos='fade-in'
+            // data-aos-delay='1600'>
+          >
+            {title.split(' ').map((t, i) => (
+              <Fragment key={i}>
+                <span>{t}</span>
+                <br />
+              </Fragment>
+            ))}
+          </h2>
+          <H6
+            className={right ? 'mr-4' : 'ml-4'}
+            // data-aos='fade-in'
+            // data-aos-delay='1800'>
+          >
+            {children}
+          </H6>
+          <Link
+            to={link}
+            className={
+              right
+                ? 'waves-effect waves-light btn mt-3 mr-4'
+                : 'waves-effect waves-light btn mt-3 ml-4'
+            }
+            // data-aos='fade-in'
+            // data-aos-delay='2000'
+            // data-aos-offset='-100'
+            style={{ background: color }}>
+            View Available Properties
+          </Link>
+        </EstateFeatureItemInner>
+      </VizSensor>
     </EstateFeatureItemContainer>
 
     // <div className='searchmls-cta row'>
@@ -143,7 +156,7 @@ const EstateFeature = () => {
   return (
     <>
       <EstateFeatureItem
-        image='assets/images/hero/capitol.jpg'
+        image='/assets/images/hero/capitol.jpg'
         pre_title='The'
         title='Capitiol Commons'
         link='/listing-list/capitol-commons'
@@ -152,7 +165,7 @@ const EstateFeature = () => {
         Capitol Commons is the new destination for luxury living.
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='assets/images/hero/center.jpg'
+        image='/assets/images/hero/center.jpg'
         pre_title='The'
         title='Ortigas Center'
         link='/listing-list/ortigas-center'
@@ -161,7 +174,7 @@ const EstateFeature = () => {
         buisness districts (CBD) in Metro Manila
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='assets/images/hero/circulo.jpg'
+        image='/assets/images/hero/circulo.jpg'
         pre_title='The Sactuary'
         title='Circulo Verde'
         link='/listing-list/circulo-verde'
@@ -170,7 +183,7 @@ const EstateFeature = () => {
         A suburban sanctuary in the city
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='assets/images/hero/east.jpg'
+        image='/assets/images/hero/east.jpg'
         pre_title='The new center'
         title='Ortigas East'
         link='/listing-list/ortigas-east'
@@ -179,7 +192,7 @@ const EstateFeature = () => {
         corridor
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='assets/images/hero/greenhills.jpg'
+        image='/assets/images/hero/greenhills.jpg'
         pre_title='A space reborn'
         title='Greenhills Center'
         link='/listing-list/greenhills'

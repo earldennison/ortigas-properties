@@ -12,7 +12,9 @@ const ListingList = ({ pre_title, title, description, banner, dataList }) => {
         title={title}
         description={description}
       />
-      <PropertyListDisplay list={dataList} />
+      <div className='container my-5'>
+        <PropertyListDisplay list={dataList} />
+      </div>
     </>
   );
 };
