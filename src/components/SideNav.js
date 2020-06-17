@@ -79,7 +79,10 @@ class SideBar extends Component {
           }}>
           <li>
             <div className='user-view p-4'>
-              <img alt='img' src='/assets/images/ortigasland.svg' />
+              <img
+                alt='img'
+                src='https://res.cloudinary.com/kendev/image/upload/v1592385780/ortigas-properties/ortigasland_z2piyh.svg'
+              />
             </div>
           </li>
           <Item to='/estates' icon='fas fa-home'>

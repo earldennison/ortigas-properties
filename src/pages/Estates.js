@@ -20,7 +20,9 @@ const EstatesContainer = styled.section`
 
 const Estates = () => (
   <>
-    <Banner banner_dir='/assets/images/banners/Imperium_Banner021.jpg' snap>
+    <Banner
+      banner_dir='https://res.cloudinary.com/kendev/image/upload/v1592388245/ortigas-properties/Imperium_Banner021_plxdv1.jpg'
+      snap>
       <PropertyListDetails
         pre_title='Our'
         title='estates'

@@ -76,7 +76,7 @@ const Footer = () => (
             <div className='footer-realtor-logo'>
               <img
                 alt=''
-                src='assets/images/ortigasland.svg'
+                src='https://res.cloudinary.com/kendev/image/upload/v1592385780/ortigas-properties/ortigasland_z2piyh.svg'
                 style={{ filter: 'brightness(0) invert(1)', width: 100 }}
               />
             </div>

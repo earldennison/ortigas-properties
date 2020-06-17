@@ -35,7 +35,7 @@ const EstateFeatureItemInner = styled.div`
   text-align: ${({ right }) => (right ? 'right' : 'left')};
   ${({ right, color }) =>
     right
-      ? 'border-right: 2px solid ${color};'
+      ? `border-right: 2px solid ${color};`
       : `border-left: 2px solid ${color};`}
   color: #fff;
   letter-spacing: 0.1em;
@@ -156,7 +156,7 @@ const EstateFeature = () => {
   return (
     <>
       <EstateFeatureItem
-        image='/assets/images/hero/capitol.jpg'
+        image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/capitol_rvwylq.jpg'
         pre_title='The'
         title='Capitiol Commons'
         link='/listing-list/capitol-commons'
@@ -165,7 +165,7 @@ const EstateFeature = () => {
         Capitol Commons is the new destination for luxury living.
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='/assets/images/hero/center.jpg'
+        image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/center_usgvoh.jpg'
         pre_title='The'
         title='Ortigas Center'
         link='/listing-list/ortigas-center'
@@ -174,7 +174,7 @@ const EstateFeature = () => {
         buisness districts (CBD) in Metro Manila
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='/assets/images/hero/circulo.jpg'
+        image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/circulo_ia78dx.jpg'
         pre_title='The Sactuary'
         title='Circulo Verde'
         link='/listing-list/circulo-verde'
@@ -183,7 +183,7 @@ const EstateFeature = () => {
         A suburban sanctuary in the city
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='/assets/images/hero/east.jpg'
+        image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/east_ubovhr.jpg'
         pre_title='The new center'
         title='Ortigas East'
         link='/listing-list/ortigas-east'
@@ -192,7 +192,7 @@ const EstateFeature = () => {
         corridor
       </EstateFeatureItem>
       <EstateFeatureItem
-        image='/assets/images/hero/greenhills.jpg'
+        image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/greenhills_tie9rc.jpg'
         pre_title='A space reborn'
         title='Greenhills Center'
         link='/listing-list/greenhills'

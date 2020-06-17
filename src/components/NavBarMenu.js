@@ -35,7 +35,7 @@ const LogoHolder = ({ link }) => (
     <Link to={link}>
       <div className='textwidget'>
         <img
-          src='/assets/images/ortigasland.svg'
+          src='https://res.cloudinary.com/kendev/image/upload/v1592385780/ortigas-properties/ortigasland_z2piyh.svg'
           alt='Ortigas Land Properties'
           style={{ marginTop: '20px' }}
           className='img-responsive'
@@ -176,7 +176,7 @@ const NavBarMenu = () => {
           <div className='logo-holder'>
             <Link to='/'>
               <img
-                src='/assets/images/ortigasland.svg'
+                src='https://res.cloudinary.com/kendev/image/upload/v1592385780/ortigas-properties/ortigasland_z2piyh.svg'
                 alt='Ortigas Land Properties'
               />
             </Link>
