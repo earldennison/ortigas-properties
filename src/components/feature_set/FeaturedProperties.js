@@ -56,28 +56,28 @@ const FeaturedWrapper = (props) => {
                 propertyName='The Galleon'
                 estate='Ortigas Center'
                 updateStatus='Pre-Selling'
-                image='assets/images/galleon/Galleon_01.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592384760/ortigas-properties/galleon_images/Galleon_05_og3ce4.jpg'
               />
               <FeatPropItem
                 link='/properties/imperium'
                 propertyName='The Imperium'
                 estate='Capitol Commons'
                 updateStatus='Pre-Selling'
-                image='assets/images/imperium_images/Imperium01_large.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592384413/ortigas-properties/imperium_images/Imperium07_large_kivect.jpg'
               />
 
               <FeatPropItem
                 link='/properties/connor'
                 propertyName='Connor'
                 estate='Greenhills Center'
-                image='assets/images/conor/Conor_01_large.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592385590/ortigas-properties/connor_images/Connor_04_large_trijhz.jpg'
               />
               <FeatPropItem
                 link='/properties/royalton'
                 propertyName='Royalton'
                 estate='Capitiol Commons'
                 updateStatus='Turnover'
-                image='assets/images/royalton/Royalton_01_large.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592385031/ortigas-properties/royalton_images/Royalton_01_large_cfs37f.jpg'
               />
             </div>
           </div>

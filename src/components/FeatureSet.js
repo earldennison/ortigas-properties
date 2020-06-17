@@ -12,27 +12,27 @@ const FeatureSet = () => {
             <div className='cta-row row'>
               <ClickBox
                 link='/listing-list/residences'
-                image='assets/images-theme/imageImperium.png'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592384414/ortigas-properties/imperium_images/Imperium01_large_cfrnbj.jpg'
                 line1={'Our'}
                 line2={'Residences'}
               />
 
               <ClickBox
                 link='/estates'
-                image='assets/images/hero/capitol.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/capitol_rvwylq.jpg'
                 line1={'Our'}
                 line2={'Estates'}
               />
 
               <ClickBox
                 link='/listing-list/offices'
-                image='assets/images/glaston/Glaston_01_large.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592385529/ortigas-properties/glaston_images/Glaston_01_large_b0lhsp.jpg'
                 line1={'Our'}
                 line2={'Offices'}
               />
 
               <ClickBox
-                image='assets/images/hero/center.jpg'
+                image='https://res.cloudinary.com/kendev/image/upload/v1592384321/ortigas-properties/hero_images/center_usgvoh.jpg'
                 line1={'News'}
                 line2={'Updates'}
               />
